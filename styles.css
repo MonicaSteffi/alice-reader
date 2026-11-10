@@ -307,6 +307,16 @@ a { color: var(--accent); }
 .legend .s2 { text-decoration: underline dashed var(--story-line); text-underline-offset: 3px; color: var(--text); }
 .legend .s3 { background: var(--saved); color: var(--text); padding: 0 3px; border-radius: 3px; }
 
+/* Shelf */
+.books { margin-top: 6px; }
+.book-row { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.book-row:last-child { border-bottom: 0; }
+.book-row .grow { flex: 1; min-width: 0; }
+.book-row .grow b { display: block; font-family: var(--reading-font); font-size: 18px; }
+.book-row .grow span { display: block; font-size: 14px; color: var(--muted); }
+.book-row .btn { min-height: 40px; padding: 6px 16px; }
+.book-row.current .grow b { color: var(--accent); }
+
 /* Read / Listen */
 .mode-row { margin: 4px 0 10px; }
 .mode-row .seg { display: flex; }

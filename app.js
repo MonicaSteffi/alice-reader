@@ -1,7 +1,7 @@
 // Alice reader: a graded reader for iPhone that works offline and keeps all progress on the phone.
 import * as db from './db.js';
 
-const APP_VERSION = '1.1.0';
+const APP_VERSION = '1.2.0';
 const DEFAULT_PREFS = {
   fontSize: 19, theme: 'auto', markNew: true, markStory: true, markSaved: true,
   lastBackup: null, persistAsked: false,
@@ -22,12 +22,13 @@ const ICON = {
   pause: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" fill="currentColor"/></svg>',
   prev: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h2.5v14H6zM19 5.5v13L9.5 12z" fill="currentColor"/></svg>',
   next: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 5H18v14h-2.5zM5 5.5v13L14.5 12z" fill="currentColor"/></svg>',
+  books: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4.5h4.5v15H4zM10.5 4.5H15v15h-4.5zM16.6 5.2l3.9-1 3 14.6-3.9 1z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" transform="translate(-1.5 0)"/></svg>',
   words: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5h12v17l-6-4-6 4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>',
 };
 
 const state = {
   meta: null, manifest: null, lexicon: {}, glosses: {}, prefs: { ...DEFAULT_PREFS },
-  progress: new Map(), words: new Map(), voices: [], streak: 0, reader: null,
+  progress: new Map(), words: new Map(), voices: [], streak: 0, reader: null, shelf: [], bookId: null,
   listen: { playing: false, idx: -1, gen: 0, resumeOnClose: false, utt: null, gap: null },
 };
 const app = document.getElementById('app');
@@ -92,21 +93,55 @@ function setMeta(meta) {
 }
 
 // ------------------------------------------------------------------ start
+function currentBookId() {
+  try { return localStorage.getItem('currentBook'); } catch (e) { return null; }
+}
+
+function setCurrentBookId(id) {
+  try { localStorage.setItem('currentBook', id); } catch (e) { /* storage blocked */ }
+}
+
+// The shelf lists the books stored with the app (books/index.json). Offline, the service worker serves the last copy.
+async function loadShelf() {
+  try {
+    const resp = await fetch('books/index.json', { cache: 'no-cache' });
+    if (!resp.ok) return [];
+    const data = await resp.json();
+    return Array.isArray(data.books) ? data.books.filter((b) => b && b.id && b.file) : [];
+  } catch (e) { return []; }
+}
+
+// Switch the storage to one book and load its progress. Text settings carry over between books.
+async function loadBookState(id) {
+  const carry = state.prefs;
+  db.useBook(id);
+  await db.openDB();
+  const saved = await db.get('settings', 'prefs');
+  state.prefs = { ...DEFAULT_PREFS, ...(saved || carry) };
+  if (!saved && state.bookId) await savePrefs();
+  applyPrefs();
+  state.bookId = id;
+  state.meta = null; state.manifest = null; state.lexicon = {}; state.glosses = {};
+  const meta = await db.get('meta', 'book');
+  if (meta) setMeta(meta);
+  state.progress = new Map((await db.getAll('progress')).map((p) => [p.num, p]));
+  state.words = new Map((await db.getAll('words')).map((w) => [w.lemma, w]));
+  await computeStreak();
+}
+
 async function init() {
   applyPrefs();
+  state.shelf = await loadShelf();
+  // Without a shelf the app works as before: one book, loaded from a file.
+  const id = currentBookId() || (state.shelf.length ? null : 'alice');
   try {
-    await db.openDB();
+    await loadBookState(id || 'alice');
+    // An Alice book loaded before the shelf existed counts as the open book.
+    if (!id) { if (state.meta) setCurrentBookId('alice'); else state.bookId = null; }
   } catch (e) {
     app.innerHTML = `<div class="card"><h2>Storage is not available</h2><p>${esc(e.message || e)}</p><p class="muted">Private browsing can block storage. Open the app from the Home Screen icon.</p></div>`;
     return;
   }
-  state.prefs = { ...DEFAULT_PREFS, ...((await db.get('settings', 'prefs')) || {}) };
-  applyPrefs();
-  const meta = await db.get('meta', 'book');
-  if (meta) setMeta(meta);
-  for (const p of await db.getAll('progress')) state.progress.set(p.num, p);
-  for (const w of await db.getAll('words')) state.words.set(w.lemma, w);
-  await computeStreak();
   window.addEventListener('hashchange', route);
   backdrop.addEventListener('click', closeSheet);
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeSheet(); });
@@ -115,6 +150,19 @@ async function init() {
   registerSW();
   loadVoices();
   maybePersist(false);
+  if (state.meta) checkBookUpdate();
+}
+
+// If the shelf has a newer version of the open book, load it in the background. Progress is kept.
+async function checkBookUpdate() {
+  const entry = state.shelf.find((b) => b.id === state.bookId);
+  if (!entry || !entry.version || !state.meta || state.meta.bookVersion === entry.version) return;
+  try {
+    const data = await fetchBook(entry);
+    await importBook(data, entry.version);
+    toast(`${entry.title} was updated.`);
+    if (!location.hash.startsWith('#/read')) route();
+  } catch (e) { /* offline: keep the current version */ }
 }
 
 function route() {
@@ -122,7 +170,10 @@ function route() {
   closeSheet();
   stopReading();
   const h = location.hash || '#/';
-  if (!state.meta) { renderWelcome(); return; }
+  if (h.startsWith('#/books') || !state.meta) {
+    if (state.shelf.length) renderShelf(); else renderWelcome();
+    return;
+  }
   const m = h.match(/^#\/read\/(\d+)/);
   if (m) { renderReader(Number(m[1])); return; }
   if (h.startsWith('#/words')) { renderWords(); return; }
@@ -191,13 +242,12 @@ function silence() {
 }
 
 // ------------------------------------------------------------------ welcome and book import
-function renderWelcome() {
-  const ios = isIOS();
-  const sa = isStandalone();
-  const showInstall = ios && !sa;
-  app.innerHTML = `
-    <div class="hero"><h1>Alice im Wunderland</h1><div class="sub">Leseroman A1 bis B2</div></div>
-    ${showInstall ? `
+function showInstall() {
+  return isIOS() && !isStandalone();
+}
+
+function installCardHTML(where) {
+  return `
     <div class="card">
       <h2>1. Install the app</h2>
       <ol class="steps">
@@ -205,11 +255,18 @@ function renderWelcome() {
         <li>Choose <b>Add to Home Screen</b>, then <b>Add</b>.</li>
         <li>Open <b>Alice</b> from the new icon on your Home Screen.</li>
       </ol>
-      <div class="note">Load the book inside the installed app, not here in Safari. On iPhone, Safari and the installed app keep separate storage.</div>
-    </div>` : ''}
+      <div class="note">${where} inside the installed app, not here in Safari. On iPhone, Safari and the installed app keep separate storage.</div>
+    </div>`;
+}
+
+function renderWelcome() {
+  const inst = showInstall();
+  app.innerHTML = `
+    <div class="hero"><h1>Alice im Wunderland</h1><div class="sub">Leseroman A1 bis B2</div></div>
+    ${inst ? installCardHTML('Load the book') : ''}
     <div class="card">
-      <h2>${showInstall ? '2. ' : ''}Load the book</h2>
-      <p>Choose the book file (its name ends in <b>Book file for app-v1.json</b>) from the Files app. The book is saved on this phone only. Nothing is uploaded.</p>
+      <h2>${inst ? '2. ' : ''}Load the book</h2>
+      <p>Choose the book file (a <b>.json</b> file) from the Files app. The book is saved on this phone only. Nothing is uploaded.</p>
       <button class="btn primary block" id="load-btn" type="button">Choose book file</button>
       <input type="file" id="book-file" hidden>
       <p id="load-status" class="small muted" aria-live="polite"></p>
@@ -219,6 +276,56 @@ function renderWelcome() {
   $('#book-file').onchange = (e) => handleBookFile(e.target.files[0], $('#load-status'));
 }
 
+function slug(t) {
+  return String(t || 'book').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'book';
+}
+
+function checkBookData(data) {
+  if (!data || data.format !== 'alice-book' || !Array.isArray(data.chapters) || !data.manifest) {
+    throw new Error('This is not a book file for this app.');
+  }
+}
+
+async function importBook(data, version) {
+  checkBookData(data);
+  const meta = {
+    manifest: data.manifest, lexicon: data.lexicon || {}, glosses: data.glosses || {},
+    built: data.built || null, bookVersion: version || data.version || 1, loadedAt: new Date().toISOString(),
+  };
+  await db.replaceBook(meta, data.chapters);
+  setMeta(meta);
+}
+
+async function fetchBook(entry) {
+  const resp = await fetch(entry.file, { cache: 'no-cache' });
+  if (!resp.ok) throw new Error(`Could not download “${entry.title}” (error ${resp.status}).`);
+  try { return await resp.json(); } catch (e) { throw new Error(`“${entry.title}” is not a valid book file.`); }
+}
+
+function goHome() {
+  if (location.hash !== '#/') location.hash = '#/'; else route();
+}
+
+// Open a book from the shelf. The first time, it is downloaded once and then works offline.
+async function openShelfBook(id, statusEl) {
+  const entry = state.shelf.find((b) => b.id === id);
+  if (!entry) return;
+  stopListening();
+  try {
+    await loadBookState(id);
+    if (!state.meta) {
+      statusEl.textContent = `Downloading “${entry.title}” …`;
+      await importBook(await fetchBook(entry), entry.version);
+      await maybePersist(true);
+    }
+    setCurrentBookId(id);
+    goHome();
+    checkBookUpdate();
+  } catch (e) {
+    statusEl.innerHTML = `<span class="error">${esc(e.message || e)}</span>`;
+  }
+}
+
 async function handleBookFile(file, statusEl) {
   if (!file) return;
   statusEl.textContent = 'Reading the file …';
@@ -226,23 +333,64 @@ async function handleBookFile(file, statusEl) {
     const text = await file.text();
     let data;
     try { data = JSON.parse(text); } catch (e) { throw new Error('This file is not a book file (it is not JSON).'); }
-    if (!data || data.format !== 'alice-book' || !Array.isArray(data.chapters) || !data.manifest) {
-      throw new Error('This is not the Alice book file.');
-    }
+    checkBookData(data);
+    const title = data.manifest.book?.title || '';
+    const id = data.id || state.shelf.find((b) => b.title === title)?.id || (state.shelf.length ? slug(title) : 'alice');
+    stopListening();
+    await loadBookState(id);
     statusEl.textContent = `Saving ${data.chapters.length} chapters …`;
-    const meta = {
-      manifest: data.manifest, lexicon: data.lexicon || {}, glosses: data.glosses || {},
-      built: data.built || null, bookVersion: data.version || 1, loadedAt: new Date().toISOString(),
-    };
-    await db.replaceBook(meta, data.chapters);
-    setMeta(meta);
+    await importBook(data);
+    setCurrentBookId(id);
     statusEl.textContent = 'Done.';
     toast('Book loaded. Viel Spaß beim Lesen!');
     await maybePersist(true);
-    if (location.hash !== '#/') location.hash = '#/'; else route();
+    goHome();
   } catch (e) {
     statusEl.innerHTML = `<span class="error">${esc(e.message || e)}</span>`;
   }
+}
+
+// ------------------------------------------------------------------ shelf
+function renderShelf() {
+  const inst = showInstall();
+  const rows = state.shelf.map((b) => {
+    const current = b.id === state.bookId && state.meta;
+    return `<div class="book-row${current ? ' current' : ''}">
+      <div class="grow">
+        <b>${esc(b.title)}</b>
+        <span>${esc([b.subtitle, b.level].filter(Boolean).join(' · '))}</span>
+      </div>
+      <button class="btn${current ? '' : ' primary'}" type="button" data-book="${esc(b.id)}">${current ? 'Reading' : 'Open'}</button>
+    </div>`;
+  }).join('');
+  app.innerHTML = `
+    <header class="topbar">
+      ${state.meta ? `<a class="icon-btn" href="#/" aria-label="Back to the book">${ICON.back}</a>` : ''}
+      <div class="title">Books</div>
+    </header>
+    ${inst ? installCardHTML('Open a book') : ''}
+    <div class="card">
+      <h2>${inst ? '2. Choose a book' : 'Choose a book'}</h2>
+      <div class="books">${rows}</div>
+      <p id="shelf-status" class="small muted" aria-live="polite"></p>
+    </div>
+    <div class="card">
+      <h2>Your own book file</h2>
+      <p class="small muted">Load a book file (.json) from the Files app. It is saved on this phone only.</p>
+      <button class="btn block" id="load-btn" type="button">Choose book file</button>
+      <input type="file" id="book-file" hidden>
+      <p id="load-status" class="small muted" aria-live="polite"></p>
+    </div>
+    <p class="small muted">Each book keeps its own progress and saved words. Version ${APP_VERSION}</p>`;
+  app.querySelectorAll('[data-book]').forEach((b) => {
+    b.onclick = () => {
+      if (b.dataset.book === state.bookId && state.meta) { goHome(); return; }
+      openShelfBook(b.dataset.book, $('#shelf-status'));
+    };
+  });
+  $('#load-btn').onclick = () => $('#book-file').click();
+  $('#book-file').onchange = (e) => handleBookFile(e.target.files[0], $('#load-status'));
+  window.scrollTo(0, 0);
 }
 
 // ------------------------------------------------------------------ library
@@ -292,6 +440,7 @@ function renderLibrary() {
 
   app.innerHTML = `
     <header class="topbar">
+      ${state.shelf.length ? `<a class="icon-btn" href="#/books" aria-label="All books">${ICON.books}</a>` : ''}
       <div class="title">${esc(man.book?.title || 'Alice im Wunderland')}</div>
       <a class="icon-btn" href="#/words" aria-label="Saved words">${ICON.words}</a>
       <a class="icon-btn" href="#/settings" aria-label="Settings">${ICON.gear}</a>
@@ -923,16 +1072,17 @@ async function renderSettings() {
     <div class="card">
       <h2>Book</h2>
       <p class="small muted">${esc(state.manifest.book?.title || '')}, ${state.manifest.chapters.length} chapters. Loaded ${state.meta.loadedAt ? esc(new Date(state.meta.loadedAt).toLocaleDateString()) : ''}.</p>
-      <button class="btn block" id="reload-book" type="button">Load a new book file</button>
+      ${state.shelf.length ? '<a class="btn block" href="#/books">Choose another book</a>' : ''}
+      <button class="btn block" id="reload-book" type="button" style="margin-top:10px">Load a book file</button>
       <input type="file" id="book-file" hidden>
       <p id="load-status" class="small muted" aria-live="polite"></p>
     </div>
     <div class="card">
       <h2>Start over</h2>
-      <p class="small">Deletes reading progress and saved words on this phone. The book stays.</p>
+      <p class="small">Deletes reading progress and saved words for this book on this phone. The book stays.</p>
       <button class="btn danger block" id="reset" type="button">Delete my progress</button>
     </div>
-    <p class="small muted">Alice Leseroman, app version ${APP_VERSION}. Works offline after the first start.</p>`;
+    <p class="small muted">App version ${APP_VERSION}. Works offline after the first start.</p>`;
   bindPrefControls(app, () => renderSettings());
   $('#st-info').textContent = await storageInfo();
   $('#backup').onclick = exportBackup;

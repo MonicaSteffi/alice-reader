@@ -1,0 +1,12 @@
+{
+  "books": [
+    {
+      "id": "alice",
+      "title": "Alice im Wunderland",
+      "subtitle": "Leseroman",
+      "level": "A1–B2",
+      "file": "books/alice.json",
+      "version": 1
+    }
+  ]
+}

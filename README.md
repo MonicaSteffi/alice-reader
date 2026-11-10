@@ -4,15 +4,26 @@ A small reading app for a graded German reader (levels A1 to B2). It runs in the
 
 ## What it does
 
-- Shows the chapters of a book file that you load on your phone from the Files app.
+- Book shelf: the books in the `books` folder are listed on the start screen. Tap one to open it; it is downloaded once and then works offline. Each book keeps its own progress and saved words. A book file can also be loaded from the Files app.
 - Tap any word: basic form, article and plural for nouns, level, English meaning, the sentence, and read aloud.
 - Read or Listen: in Listen mode a German voice reads the chapter sentence by sentence and highlights it. Tap a word to pause, see the English meaning and hear the word; closing the card continues. Speed: slow, normal, fast. The voice can be chosen in Aa or Settings.
 - Saves your reading position, finished chapters, saved and known words, reading minutes and day streak.
 - Backup and restore of your progress as one file (Settings).
 
+## Add a book
+
+1. Put the book file in the `books` folder, for example `books/alice.json`.
+2. Add an entry to `books/index.json`:
+
+```json
+{ "id": "alice", "title": "Alice im Wunderland", "subtitle": "Leseroman", "level": "A1–B2", "file": "books/alice.json", "version": 1 }
+```
+
+`id` must be unique and must not change later (progress is stored under it). To publish a corrected book file, raise `version`; phones load the new file and keep the progress.
+
 ## Privacy
 
-The book file and all progress stay on the phone (IndexedDB). This repository contains only the app code, not the book. Nothing is sent to a server.
+All progress stays on the phone (IndexedDB). Books in the `books` folder are public if the repository is public. Nothing is sent to a server.
 
 ## Install on iPhone
 
@@ -29,6 +40,7 @@ The book file and all progress stay on the phone (IndexedDB). This repository co
 | db.js | storage on the phone (IndexedDB) |
 | styles.css | design |
 | sw.js | offline cache (service worker) |
+| books/index.json | list of books on the shelf |
 | manifest.webmanifest, icon-*.png | Home Screen app name and icons |
 
 ## Update

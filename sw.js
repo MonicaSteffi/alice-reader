@@ -1,5 +1,5 @@
 // Service worker: keeps the app itself available offline. The book and the progress live in IndexedDB.
-const VERSION = '1.1.0'; // change this on every release, or phones keep the old files
+const VERSION = '1.2.0'; // change this on every release, or phones keep the old files
 const CACHE = `alice-app-${VERSION}`;
 const ASSETS = [
   './',
@@ -41,6 +41,18 @@ self.addEventListener('fetch', (event) => {
           return resp;
         })
         .catch(() => caches.match('./index.html')),
+    );
+    return;
+  }
+  // Books and the shelf list: network first so new books appear, cache as fallback offline.
+  if (url.pathname.includes('/books/')) {
+    event.respondWith(
+      fetch(req)
+        .then((resp) => {
+          if (resp.ok) { const copy = resp.clone(); caches.open(CACHE).then((c) => c.put(req, copy)); }
+          return resp;
+        })
+        .catch(() => caches.match(req, { ignoreSearch: true })),
     );
     return;
   }

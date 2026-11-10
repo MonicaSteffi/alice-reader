@@ -1,5 +1,6 @@
 // Small promise wrapper around IndexedDB. Everything the app saves lives in one database on the phone.
-const DB_NAME = 'alice-reader';
+// One database per book. The Alice book keeps the original name so existing progress stays.
+let DB_NAME = 'alice-reader';
 const DB_VERSION = 1;
 const STORES = {
   meta: null,                    // key 'book': manifest, lexicon, glosses
@@ -11,6 +12,14 @@ const STORES = {
 };
 
 let dbPromise = null;
+
+export function useBook(id) {
+  const name = !id || id === 'alice' ? 'alice-reader' : `reader-${id}`;
+  if (name === DB_NAME) return;
+  if (dbPromise) dbPromise.then((d) => d.close()).catch(() => {});
+  DB_NAME = name;
+  dbPromise = null;
+}
 
 export function openDB() {
   if (dbPromise) return dbPromise;
