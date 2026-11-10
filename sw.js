@@ -1,5 +1,5 @@
 // Service worker: keeps the app itself available offline. The book and the progress live in IndexedDB.
-const VERSION = '1.0.0';
+const VERSION = '1.1.0'; // change this on every release, or phones keep the old files
 const CACHE = `alice-app-${VERSION}`;
 const ASSETS = [
   './',
@@ -11,10 +11,11 @@ const ASSETS = [
   './icon-180.png',
   './icon-192.png',
   './icon-512.png',
+  './icon-maskable-512.png',
 ];
 
 self.addEventListener('install', (event) => {
-  event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(ASSETS)).then(() => self.skipWaiting()));
+  event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(ASSETS.map((u) => new Request(u, { cache: 'reload' })))).then(() => self.skipWaiting()));
 });
 
 self.addEventListener('activate', (event) => {

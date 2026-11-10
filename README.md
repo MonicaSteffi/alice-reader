@@ -6,6 +6,7 @@ A small reading app for a graded German reader (levels A1 to B2). It runs in the
 
 - Shows the chapters of a book file that you load on your phone from the Files app.
 - Tap any word: basic form, article and plural for nouns, level, English meaning, the sentence, and read aloud.
+- Read or Listen: in Listen mode a German voice reads the chapter sentence by sentence and highlights it. Tap a word to pause, see the English meaning and hear the word; closing the card continues. Speed: slow, normal, fast. The voice can be chosen in Aa or Settings.
 - Saves your reading position, finished chapters, saved and known words, reading minutes and day streak.
 - Backup and restore of your progress as one file (Settings).
 
@@ -32,4 +33,4 @@ The book file and all progress stay on the phone (IndexedDB). This repository co
 
 ## Update
 
-Upload the changed files to this repository again. The app shows "A new version of the app is ready" and reloads after you tap Reload. Progress on the phone is kept.
+Change `VERSION` at the top of `sw.js` (and `APP_VERSION` in `app.js`), then upload the changed files. Without a new `VERSION` the phone keeps using the old files. The app shows "A new version of the app is ready" and reloads after you tap Reload. Progress on the phone is kept.

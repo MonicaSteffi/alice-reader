@@ -307,6 +307,49 @@ a { color: var(--accent); }
 .legend .s2 { text-decoration: underline dashed var(--story-line); text-underline-offset: 3px; color: var(--text); }
 .legend .s3 { background: var(--saved); color: var(--text); padding: 0 3px; border-radius: 3px; }
 
+/* Read / Listen */
+.mode-row { margin: 4px 0 10px; }
+.mode-row .seg { display: flex; }
+.mode-row .seg button { flex: 1; min-height: 38px; font-size: 15px; }
+.text .sent { border-radius: 4px; transition: background 0.2s; }
+.text .sent.reading { background: var(--accent-soft); box-shadow: 0 0 0 3px var(--accent-soft); }
+body.listening .toast { bottom: calc(96px + env(safe-area-inset-bottom)); }
+body.listening #app { padding-bottom: calc(110px + env(safe-area-inset-bottom)); }
+.player {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 15;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+  background: color-mix(in srgb, var(--surface) 94%, transparent);
+  backdrop-filter: saturate(1.4) blur(12px);
+  -webkit-backdrop-filter: saturate(1.4) blur(12px);
+  border-top: 1px solid var(--line);
+}
+.play-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--accent-text);
+  cursor: pointer;
+}
+.play-btn svg { width: 26px; height: 26px; }
+.play-btn:active { transform: scale(0.96); }
+.pl-info { flex: 1; display: flex; align-items: center; justify-content: flex-end; gap: 10px; font-size: 14px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.pl-rate { min-height: 36px; padding: 0 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface-2); font-size: 14px; font-weight: 600; cursor: pointer; }
+.select { max-width: 60%; min-height: 36px; padding: 4px 8px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface-2); }
+
 /* Bottom sheet */
 .sheet-backdrop { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.25); z-index: 20; }
 .sheet {

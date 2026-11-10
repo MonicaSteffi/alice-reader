@@ -1,11 +1,13 @@
 // Alice reader: a graded reader for iPhone that works offline and keeps all progress on the phone.
 import * as db from './db.js';
 
-const APP_VERSION = '1.0.0';
+const APP_VERSION = '1.1.0';
 const DEFAULT_PREFS = {
   fontSize: 19, theme: 'auto', markNew: true, markStory: true, markSaved: true,
   lastBackup: null, persistAsked: false,
+  mode: 'read', rate: 0.85, voice: '',
 };
+const RATES = [[0.7, 'Slow'], [0.85, 'Normal'], [1, 'Fast']];
 const LEVEL_LABEL = { A1: 'A1', A2: 'A2', B1: 'B1', B2: 'B2', B2x: 'B2+', OUT: 'rare', F: 'grammar word', NAME: 'name', NUM: 'number' };
 const POS_LABEL = {
   NOUN: 'noun', PROPN: 'name', VERB: 'verb', AUX: 'auxiliary verb', ADJ: 'adjective', ADV: 'adverb',
@@ -16,12 +18,17 @@ const COMMON_GRAMMAR = new Set(['PRAES', 'KON_UND_ABER_ODER', 'W_FRAGE', 'PRAET_
 const ICON = {
   back: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>',
   gear: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>',
+  play: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>',
+  pause: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" fill="currentColor"/></svg>',
+  prev: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h2.5v14H6zM19 5.5v13L9.5 12z" fill="currentColor"/></svg>',
+  next: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 5H18v14h-2.5zM5 5.5v13L14.5 12z" fill="currentColor"/></svg>',
   words: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5h12v17l-6-4-6 4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>',
 };
 
 const state = {
   meta: null, manifest: null, lexicon: {}, glosses: {}, prefs: { ...DEFAULT_PREFS },
   progress: new Map(), words: new Map(), voices: [], streak: 0, reader: null,
+  listen: { playing: false, idx: -1, gen: 0, resumeOnClose: false, utt: null, gap: null },
 };
 const app = document.getElementById('app');
 const sheet = document.getElementById('sheet');
@@ -111,6 +118,7 @@ async function init() {
 }
 
 function route() {
+  stopListening();
   closeSheet();
   stopReading();
   const h = location.hash || '#/';
@@ -152,15 +160,34 @@ function loadVoices() {
   if (speechSynthesis.addEventListener) speechSynthesis.addEventListener('voiceschanged', set);
 }
 
-function speak(text) {
+function pickVoice() {
+  return state.voices.find((x) => x.voiceURI === state.prefs.voice)
+    || state.voices.find((x) => /de[-_]DE/i.test(x.lang)) || state.voices[0] || null;
+}
+
+// Speak one piece of German text. onEnd runs only if this utterance finished on its own
+// (cancel() fires onend in some browsers, the generation counter ignores those).
+function speak(text, onEnd, rate = 0.9) {
   if (!('speechSynthesis' in window)) { toast('Speech is not available on this device.'); return; }
+  const L = state.listen;
+  L.gen += 1;
+  const gen = L.gen;
   const u = new SpeechSynthesisUtterance(text);
   u.lang = 'de-DE';
-  const v = state.voices.find((x) => /de[-_]DE/i.test(x.lang)) || state.voices[0];
+  const v = pickVoice();
   if (v) u.voice = v;
-  u.rate = 0.9;
-  speechSynthesis.cancel();
+  u.rate = rate;
+  u.onend = () => { if (gen === L.gen && onEnd) onEnd(); };
+  u.onerror = (e) => { if (gen === L.gen && onEnd && e.error !== 'interrupted' && e.error !== 'canceled') onEnd(); };
+  L.utt = u; // keep a reference so the browser does not drop the callbacks
+  if (speechSynthesis.speaking || speechSynthesis.pending) speechSynthesis.cancel();
   speechSynthesis.speak(u);
+}
+
+function silence() {
+  state.listen.gen += 1;
+  clearTimeout(state.listen.gap);
+  if ('speechSynthesis' in window) speechSynthesis.cancel();
 }
 
 // ------------------------------------------------------------------ welcome and book import
@@ -317,7 +344,7 @@ function chapterHTML(ch) {
     if (prefs.markSaved && st === 'learning') cls += ' saved';
     return `<span class="${cls}" data-s="${si}" data-t="${ti}">${esc(surf)}</span>${ws}`;
   }).join('');
-  const run = (a, z) => { let h = ''; for (let s = a; s < z; s += 1) h += tokens(s); return h; };
+  const run = (a, z) => { let h = ''; for (let s = a; s < z; s += 1) h += `<span class="sent" data-si="${s}">${tokens(s)}</span>`; return h; };
   return ch.blocks.map((b, bi) => {
     if (b.type === 'p') return `<p data-b="${bi}">${run(b.range[0], b.range[1])}</p>`;
     if (b.type === 'sign') {
@@ -375,9 +402,23 @@ async function renderReader(num) {
       <h1>${esc(info.title)}</h1>
       <div class="meta"><span class="badge lv-${info.level}">${info.level}</span><span>${info.reading_minutes} min</span><span>${info.words.toLocaleString('en')} words</span></div>
     </div>
+    <div class="mode-row">${segHTML('seg-mode', [['read', 'Read'], ['listen', 'Listen']], state.prefs.mode)}</div>
     ${legendHTML()}
     <article class="text" id="text" lang="de">${chapterHTML(ch)}</article>
-    ${endCardHTML(ch, info)}`;
+    ${endCardHTML(ch, info)}
+    <div class="player" id="player" hidden>
+      <button class="icon-btn" type="button" id="pl-prev" aria-label="Previous sentence">${ICON.prev}</button>
+      <button class="play-btn" type="button" id="pl-play" aria-label="Play">${ICON.play}</button>
+      <button class="icon-btn" type="button" id="pl-next" aria-label="Next sentence">${ICON.next}</button>
+      <div class="pl-info"><span id="pl-pos"></span><button type="button" id="pl-rate" class="pl-rate"></button></div>
+    </div>`;
+  state.reader.order = sentenceOrder(ch);
+  app.querySelectorAll('#seg-mode button').forEach((b) => { b.onclick = () => setMode(b.dataset.v); });
+  $('#pl-play').onclick = togglePlay;
+  $('#pl-prev').onclick = () => stepSentence(-1);
+  $('#pl-next').onclick = () => stepSentence(1);
+  $('#pl-rate').onclick = cycleRate;
+  setMode(state.prefs.mode, true);
 
   $('#text').addEventListener('click', (e) => {
     const w = e.target.closest('.w');
@@ -435,7 +476,7 @@ function startReading() {
     r.pending += 5;
     if (r.pending >= 30) flushTime();
   }, 5000);
-  r.onHide = () => { if (document.visibilityState === 'hidden') { flushTime(); flushPosition(); } };
+  r.onHide = () => { if (document.visibilityState === 'hidden') { pauseListening(); flushTime(); flushPosition(); } };
   document.addEventListener('visibilitychange', r.onHide);
 }
 
@@ -523,6 +564,10 @@ function closeSheet() {
   backdrop.hidden = true;
   const r = state.reader;
   if (r && r.activeEl) { r.activeEl.classList.remove('on'); r.activeEl = null; }
+  if (state.listen.resumeOnClose) {
+    state.listen.resumeOnClose = false;
+    if (r && state.prefs.mode === 'listen') playFrom(state.listen.idx);
+  }
 }
 
 function sentenceText(sentence, boldIndex = -1) {
@@ -542,12 +587,14 @@ function grammarChips(grammar, info) {
   return `<div class="chips">${shown.map((c) => `<span class="chip${newCodes.has(c) ? ' hl' : ''}">${esc(gc[c]?.de || c)}</span>`).join('')}</div>`;
 }
 
-function openWordSheet(si, ti, el) {
+function openWordSheet(si, ti, el, quiet = false) {
   const r = state.reader;
   if (!r) return;
   const sentence = r.ch.sentences[si];
   const tok = sentence.tokens[ti];
   const [surf, lemma, pos, level, , , story] = tok;
+  const listening = state.prefs.mode === 'listen';
+  if (listening && state.listen.playing) { pauseListening(); state.listen.resumeOnClose = true; }
   if (r.activeEl) r.activeEl.classList.remove('on');
   el.classList.add('on');
   r.activeEl = el;
@@ -577,17 +624,27 @@ function openWordSheet(si, ti, el) {
     <div class="btn-row">
       ${speech ? '<button class="btn" type="button" id="say-word">▶ Word</button><button class="btn" type="button" id="say-sent">▶ Sentence</button>' : ''}
     </div>
+    ${speech && listening ? '<div class="btn-row"><button class="btn primary" type="button" id="listen-here">Listen from this sentence</button></div>' : ''}
     <div class="btn-row">
       <button class="btn${st === 'learning' ? ' on' : ''}" type="button" id="w-save">${st === 'learning' ? '★ Saved' : '☆ Save word'}</button>
       <button class="btn${st === 'known' ? ' on' : ''}" type="button" id="w-known">${st === 'known' ? '✓ Known' : 'I know it'}</button>
     </div>`, `Word ${surf}`);
   if (speech) {
     $('#say-word').onclick = () => speak(surf);
-    $('#say-sent').onclick = () => speak(plainSentence(sentence));
+    $('#say-sent').onclick = () => speak(plainSentence(sentence), null, state.prefs.rate);
+    if (listening) {
+      $('#listen-here').onclick = () => {
+        const idx = r.order.findIndex((o) => o.si === si);
+        state.listen.resumeOnClose = false;
+        closeSheet();
+        playFrom(idx < 0 ? 0 : idx);
+      };
+    }
   }
+  if (speech && listening && !quiet) speak(surf);
   const entry = { lemma, surface: surf, chapter: r.num, sentence: plainSentence(sentence), gloss: gloss || '', level, pos, article: art };
-  $('#w-save').onclick = () => setWordStatus(entry, st === 'learning' ? null : 'learning').then(() => openWordSheet(si, ti, el));
-  $('#w-known').onclick = () => setWordStatus(entry, st === 'known' ? null : 'known').then(() => openWordSheet(si, ti, el));
+  $('#w-save').onclick = () => setWordStatus(entry, st === 'learning' ? null : 'learning').then(() => openWordSheet(si, ti, el, true));
+  $('#w-known').onclick = () => setWordStatus(entry, st === 'known' ? null : 'known').then(() => openWordSheet(si, ti, el, true));
 }
 
 async function setWordStatus(entry, status) {
@@ -615,6 +672,134 @@ function refreshWordMarks(lemma) {
   });
 }
 
+// ------------------------------------------------------------------ listen mode
+// Sentence order follows the blocks (paragraphs and signs), so the voice reads the page top to bottom.
+function sentenceOrder(ch) {
+  const out = [];
+  ch.blocks.forEach((b, bi) => {
+    const ranges = b.type === 'p' ? [b.range] : (b.type === 'sign' ? b.lines.filter(([a]) => a !== null) : []);
+    for (const [a, z] of ranges) {
+      for (let si = a; si < z; si += 1) {
+        if (plainSentence(ch.sentences[si]).replace(/[\s\p{P}]/gu, '')) out.push({ si, b: bi });
+      }
+    }
+  });
+  return out;
+}
+
+function setMode(mode, initial = false) {
+  const r = state.reader;
+  if (!r) return;
+  if (mode === 'listen' && !('speechSynthesis' in window)) { toast('Speech is not available on this device.'); mode = 'read'; }
+  if (state.prefs.mode !== mode) { state.prefs.mode = mode; savePrefs(); }
+  app.querySelectorAll('#seg-mode button').forEach((b) => b.classList.toggle('on', b.dataset.v === mode));
+  const listen = mode === 'listen';
+  $('#player').hidden = !listen;
+  document.body.classList.toggle('listening', listen);
+  if (!listen) { stopListening(); return; }
+  updatePlayer();
+  if (!initial && state.listen.idx < 0) toast('Tap ▶ to start. Tap any word to see its meaning.');
+}
+
+function startIndex() {
+  const r = state.reader;
+  const b = currentBlock();
+  if (b === null || b === 'end') return 0;
+  const i = r.order.findIndex((o) => o.b >= b);
+  return i < 0 ? 0 : i;
+}
+
+function playFrom(idx) {
+  const r = state.reader;
+  const L = state.listen;
+  if (!r) return;
+  if (idx < 0 || idx >= r.order.length) {
+    stopListening();
+    if (idx >= r.order.length) {
+      toast(`Ende von Kapitel ${r.num}.`);
+      const end = app.querySelector('.end-card');
+      if (end) window.scrollTo({ top: end.getBoundingClientRect().top + window.scrollY - 80, behavior: 'smooth' });
+    }
+    return;
+  }
+  L.idx = idx;
+  L.playing = true;
+  clearTimeout(L.gap);
+  const { si } = r.order[idx];
+  markSentence(si);
+  updatePlayer();
+  r.lastActive = Date.now(); // listening counts as reading time
+  speak(plainSentence(r.ch.sentences[si]), () => {
+    L.gap = setTimeout(() => { if (L.playing && state.reader === r) playFrom(L.idx + 1); }, 350);
+  }, state.prefs.rate);
+}
+
+function pauseListening() {
+  const L = state.listen;
+  if (!L.playing) return;
+  L.playing = false;
+  silence();
+  updatePlayer();
+}
+
+function stopListening() {
+  const L = state.listen;
+  L.playing = false;
+  L.idx = -1;
+  L.resumeOnClose = false;
+  silence();
+  app.querySelectorAll('.sent.reading').forEach((el) => el.classList.remove('reading'));
+  if (state.reader) updatePlayer();
+}
+
+function togglePlay() {
+  const L = state.listen;
+  if (L.playing) { pauseListening(); return; }
+  playFrom(L.idx >= 0 ? L.idx : startIndex());
+}
+
+function stepSentence(d) {
+  const r = state.reader;
+  const L = state.listen;
+  const base = L.idx >= 0 ? L.idx : startIndex();
+  const idx = Math.max(0, Math.min(r.order.length - 1, base + d));
+  if (L.playing) { playFrom(idx); return; }
+  L.idx = idx;
+  markSentence(r.order[idx].si);
+  updatePlayer();
+}
+
+function cycleRate() {
+  const i = RATES.findIndex(([v]) => v === state.prefs.rate);
+  state.prefs.rate = RATES[(i + 1) % RATES.length][0];
+  savePrefs();
+  updatePlayer();
+  if (state.listen.playing) playFrom(state.listen.idx);
+}
+
+function markSentence(si) {
+  app.querySelectorAll('.sent.reading').forEach((el) => el.classList.remove('reading'));
+  const el = app.querySelector(`.sent[data-si="${si}"]`);
+  if (!el) return;
+  el.classList.add('reading');
+  const rect = el.getBoundingClientRect();
+  if (rect.top < 90 || rect.bottom > window.innerHeight - 150) {
+    window.scrollTo({ top: rect.top + window.scrollY - window.innerHeight / 3, behavior: 'smooth' });
+  }
+}
+
+function updatePlayer() {
+  const r = state.reader;
+  const L = state.listen;
+  const play = $('#pl-play');
+  if (!r || !play) return;
+  play.innerHTML = L.playing ? ICON.pause : ICON.play;
+  play.setAttribute('aria-label', L.playing ? 'Pause' : 'Play');
+  $('#pl-pos').textContent = L.idx >= 0 ? `Satz ${L.idx + 1} / ${r.order.length}` : `${r.order.length} Sätze`;
+  const rate = RATES.find(([v]) => v === state.prefs.rate) || RATES[1];
+  $('#pl-rate').textContent = rate[1];
+}
+
 // ------------------------------------------------------------------ text settings (in the reader)
 function segHTML(id, options, value) {
   return `<div class="seg" id="${id}">${options.map(([v, label]) => `<button type="button" data-v="${v}" class="${String(v) === String(value) ? 'on' : ''}">${label}</button>`).join('')}</div>`;
@@ -634,6 +819,8 @@ function bindPrefControls(root, onChange) {
   root.querySelectorAll('#seg-theme button').forEach((b) => {
     b.onclick = async () => { state.prefs.theme = b.dataset.v; applyPrefs(); await savePrefs(); onChange('theme'); };
   });
+  const vs = root.querySelector('#voice');
+  if (vs) vs.onchange = async () => { state.prefs.voice = vs.value; await savePrefs(); speak('Hallo, ich lese dir vor.', null, state.prefs.rate); };
   for (const [id, key] of [['t-new', 'markNew'], ['t-story', 'markStory'], ['t-saved', 'markSaved']]) {
     const el = root.querySelector(`#${id}`);
     if (el) el.onchange = async () => { state.prefs[key] = el.checked; await savePrefs(); onChange('marks'); };
@@ -647,7 +834,8 @@ function prefControlsHTML() {
     <div class="set-row"><span>Theme</span>${segHTML('seg-theme', THEMES, p.theme)}</div>
     ${switchHTML('t-new', p.markNew, 'Mark the chapter\'s new words')}
     ${switchHTML('t-story', p.markStory, 'Mark story words')}
-    ${switchHTML('t-saved', p.markSaved, 'Highlight saved words')}`;
+    ${switchHTML('t-saved', p.markSaved, 'Highlight saved words')}
+    ${state.voices.length > 1 ? `<div class="set-row"><label for="voice">Voice</label><select id="voice" class="select">${state.voices.map((v) => `<option value="${esc(v.voiceURI)}"${pickVoice() === v ? ' selected' : ''}>${esc(v.name)}</option>`).join('')}</select></div>` : ''}`;
 }
 
 function openTextSettings() {
@@ -657,6 +845,7 @@ function openTextSettings() {
       const r = state.reader;
       const keep = window.scrollY;
       $('#text').innerHTML = chapterHTML(r.ch);
+      if (state.listen.idx >= 0) app.querySelector(`.sent[data-si="${r.order[state.listen.idx].si}"]`)?.classList.add('reading');
       const lg = app.querySelector('.legend');
       if (lg) lg.outerHTML = legendHTML();
       window.scrollTo(0, keep);
