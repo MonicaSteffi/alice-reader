@@ -1,0 +1,23 @@
+title: Beim Arzt
+level: A2
+grammar: MODALVERB | IMPERATIV | PERFEKT
+story: Rezept, krankschreiben
+note: **Modal verbs.** *müssen* (must), *können* (can), *sollen* (should): *Sie **müssen** eine Tablette dreimal am Tag **nehmen**.* The infinitive goes to the end.
+note: **Imperative (Sie-form).** Verb first, then *Sie*: ***Machen Sie** bitte den Mund auf. **Trinken Sie** viel.*
+note: **Useful phrases.** *Was fehlt Ihnen?* (What's wrong?) – *Ich habe Halsschmerzen / Fieber / Husten.* – *Gute Besserung!* (Get well soon!)
+---
+Ärztin: Guten Morgen, Herr Yilmaz. Was fehlt Ihnen denn?
+Herr Yilmaz: Guten Morgen. Ich habe seit drei Tagen Halsschmerzen und Husten.
+Ärztin: Haben Sie auch Fieber?
+Herr Yilmaz: Ja, gestern Abend hatte ich achtunddreißig Grad.
+Ärztin: Haben Sie schon Medikamente genommen?
+Herr Yilmaz: Nur Tee mit Honig. Ich habe auch viel geschlafen.
+Ärztin: Das ist gut. Machen{aufmachen} Sie bitte den Mund auf{aufmachen}.
+Ärztin: Der Hals ist sehr rot. Ich höre{abhören} jetzt Ihre Lunge ab{abhören}. Atmen{einatmen} Sie bitte tief ein{einatmen} und wieder aus{ausatmen}.
+Herr Yilmaz: Ist es schlimm?
+Ärztin: Nein, keine Sorge. Sie haben eine Erkältung, aber die Lunge ist frei. Ich schreibe Ihnen ein Rezept für Tabletten gegen die Halsschmerzen. Sie müssen eine Tablette dreimal am Tag nehmen.
+Herr Yilmaz: Kann ich morgen wieder arbeiten?
+Ärztin: Nein, Sie sollten bis Freitag zu Hause bleiben. Ich schreibe{krankschreiben} Sie krank{krankschreiben}. Trinken Sie viel und ruhen{ausruhen} Sie sich aus{ausruhen}.
+Herr Yilmaz: Muss ich noch einmal kommen?
+Ärztin: Nur wenn das Fieber nicht weggeht. Gute Besserung!
+Herr Yilmaz: Vielen Dank, auf Wiedersehen!

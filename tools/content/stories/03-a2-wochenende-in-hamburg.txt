@@ -1,0 +1,17 @@
+title: Ein Wochenende in Hamburg
+level: A2
+grammar: PERFEKT | DATIV_PRAEP | DENN
+story: Fischbrötchen, Labskaus, Bootsfahrt
+note: **Perfect tense.** *haben* or *sein* + participle at the end: *Wir **haben** unsere Tante **besucht**.* Verbs of movement take *sein*: *Wir **sind** nach Hamburg **gefahren**.*
+note: **Prepositions with dative.** *mit, bei, nach, seit, zu, von, aus* always take the dative: *mit **dem** Zug, bei **ihr**, seit zehn Jahr**en**.*
+note: **denn** joins two main clauses and gives a reason. The word order does not change: *…, **denn** wir waren nass und kalt.*
+---
+Letztes Wochenende bin ich mit meiner Schwester Mia nach Hamburg gefahren. Wir haben dort unsere Tante besucht. Sie wohnt seit zehn Jahren in einer kleinen Wohnung am Hafen.
+
+Am Freitagabend sind wir mit dem Zug angekommen. Die Fahrt hat fast vier Stunden gedauert, denn der Zug hatte Verspätung. Unsere Tante hat uns am Bahnhof abgeholt. Zuerst haben wir bei ihr{sie} zu Abend gegessen. Es hat Fischbrötchen und Kartoffelsalat gegeben.
+
+Am Samstag hat es leider geregnet. Trotzdem sind wir zum Hafen gegangen und haben eine Bootsfahrt gemacht. Wir haben viele große Schiffe gesehen. Danach sind wir in ein Museum gegangen, denn wir waren nass und kalt.
+
+Am Abend haben wir in einem kleinen Restaurant gegessen. Mia hat zum ersten Mal Labskaus probiert. Sie hat gesagt: „Das sieht{aussehen} komisch aus{aussehen}, aber es schmeckt gut!“
+
+Am Sonntag hat die Sonne geschienen. Wir sind an der Elbe spazieren gegangen und haben ein Eis gegessen. Am Nachmittag sind wir wieder nach Hause gefahren. Im Zug habe ich gedacht: Hamburg ist schön, auch bei Regen.

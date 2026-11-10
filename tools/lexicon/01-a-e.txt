@@ -1,0 +1,293 @@
+# lemma | POS | level | English | gender | plural | extra forms
+Abend | NOUN | A1 | evening | m | Abende |
+Abendkurs | NOUN | B2 | evening class | m | Abendkurse |
+abfahren | VERB | A2 | to depart, leave | | |
+Abgabetermin | NOUN | B2 | deadline (for handing in) | m | Abgabetermine |
+abholen | VERB | A2 | to pick up, collect | | | abgeholt
+ablaufen | VERB | B1 | to expire, run out | | | abgelaufen
+ablehnen | VERB | B1 | to turn down, reject | | | abgelehnt
+abstürzen | VERB | B2 | to crash | | | abgestürzt
+abhalten | VERB | B2 | to keep (someone) from | | | abhielt
+abhängen | VERB | B1 | to depend (on) | | |
+abhören | VERB | B1 | to listen to (with a stethoscope) | | |
+Ablauf | NOUN | B2 | process, procedure | m | Abläufe |
+abmessen | VERB | B2 | to measure (out) | | |
+Abschied | NOUN | B1 | farewell, goodbye | m | Abschiede |
+abschließen | VERB | B1 | to complete, finish; to lock | | |
+Abteilungsleiter | NOUN | B2 | head of department | m | Abteilungsleiter |
+Abwägung | NOUN | C1 | weighing up | f | Abwägungen |
+abzeichnen | VERB | C1 | (sich) to emerge, become clear | | |
+acht | NUM | NUM | eight | | |
+achtunddreißig | NUM | NUM | thirty-eight | | |
+achtzig | NUM | NUM | eighty | | |
+Akte | NOUN | B2 | file, record | f | Akten |
+Aktenordner | NOUN | B2 | binder, file folder | m | Aktenordner |
+Ali | PROPN | NAME | | | |
+allerdings | ADV | B1 | however, though | | |
+alt | ADJ | A1 | old | | | älter
+Alltag | NOUN | B1 | everyday life | m | - |
+Amerika | PROPN | NAME | America | | |
+anbieten | VERB | B1 | to offer | | |
+andere | ADJ | A1 | other, different | | | anderen, anderer, anderes, anderem
+anders | ADV | A2 | differently | | |
+anfangen | VERB | A1 | to begin, start | | |
+anfangs | ADV | B2 | at first | | | Anfangs
+angeblich | ADV | C1 | supposedly | | |
+Angebot | NOUN | A2 | offer | n | Angebote |
+aneignen | VERB | C1 | (sich) to acquire, learn | | | angeeignet
+ankommen | VERB | A1 | to arrive | | | angekommen
+angemessen | ADJ | C1 | appropriate, reasonable | | |
+angewiesen | ADJ | C1 | dependent (auf = on) | | |
+Anpassung | NOUN | B2 | adjustment | f | Anpassungen |
+anrufen | VERB | A1 | to call (on the phone) | | |
+ansehen | VERB | A2 | to look at, view | | | ansah
+ansprechen | VERB | B2 | to bring up, address | | |
+Antibiotikum | NOUN | C1 | antibiotic | n | Antibiotika | Antibiotikums
+Anton | PROPN | NAME | | | | Antons
+Antrag | NOUN | B2 | application | m | Anträge |
+Antwort | NOUN | A1 | answer | f | Antworten |
+antworten | VERB | A1 | to answer | | |
+Anzeige | NOUN | B1 | display board; advertisement | f | Anzeigen |
+Apfel | NOUN | A1 | apple | m | Äpfel |
+Apfelkuchen | NOUN | A1 | apple cake | m | Apfelkuchen |
+Arbeit | NOUN | A1 | work, job | f | Arbeiten |
+arbeiten | VERB | A1 | to work | | |
+Arbeitstag | NOUN | B1 | working day | m | Arbeitstage |
+Archivar | NOUN | C1 | archivist | m | Archivare |
+Art | NOUN | B1 | kind, type; way | f | Arten |
+auch | ADV | F | also, too | | |
+auffallen | VERB | B1 | to strike, be noticed (mir fällt auf = I notice) | | |
+Aufgabenbereich | NOUN | C1 | area of responsibility | m | Aufgabenbereiche |
+aufhören | VERB | A2 | to stop | | | aufgehört
+aufschreiben | VERB | A2 | to write down | | | aufgeschrieben, aufzuschreiben
+aufwerfen | VERB | C1 | to raise (a question) | | | aufgeworfen
+aufmachen | VERB | A1 | to open | | |
+aufstehen | VERB | A1 | to get up | | |
+auftauchen | VERB | B2 | to appear, turn up | | | auftauchte
+ausatmen | VERB | B1 | to breathe out | | |
+ausrollen | VERB | B1 | to roll out | | | ausgerollt
+ausrutschen | VERB | B1 | to slip | | | ausgerutscht
+ausgeschrieben | ADJ | B2 | advertised (job) | | |
+ausschöpfen | VERB | C1 | to use up, exhaust | | | ausgeschöpft
+auswandern | VERB | B1 | to emigrate | | | ausgewandert
+Ausland | NOUN | A2 | abroad, foreign countries | n | - |
+auslaufen | VERB | B1 | to leak, run out | | |
+Ausreise | NOUN | C1 | departure (from a country) | f | Ausreisen |
+ausruhen | VERB | A2 | (sich) to rest | | |
+Ausschlag | NOUN | C1 | (den Ausschlag geben) to be decisive | m | Ausschläge |
+aussehen | VERB | A2 | to look (like) | | | ausgesehen
+Aussicht | NOUN | B2 | prospect; view | f | Aussichten |
+aussteigen | VERB | A1 | to get off (a train, bus) | | |
+Austausch | NOUN | B2 | replacement, exchange | m | - |
+Australien | PROPN | NAME | Australia | | |
+Auswanderer | NOUN | C1 | emigrant | m | Auswanderer |
+Ausweis | NOUN | A2 | ID card | m | Ausweise |
+ausgleichen | VERB | C1 | to compensate, balance | | | auszugleichen
+außerdem | ADV | A2 | besides, in addition | | | Außerdem
+backen | VERB | A2 | to bake | | | backt, gebacken
+gebacken | ADJ | A2 | baked | | |
+Bad | NOUN | A1 | bathroom | n | Bäder |
+Bahnhof | NOUN | A1 | station | m | Bahnhöfe |
+Bakterie | NOUN | B2 | bacterium | f | Bakterien |
+Balkon | NOUN | A1 | balcony | m | Balkone |
+Beachtung | NOUN | C1 | attention (Beachtung finden = to receive attention) | f | - |
+beantworten | VERB | A2 | to answer | | |
+bedanken | VERB | B1 | (sich) to say thank you | | |
+beeindruckt | ADJ | B2 | impressed | | |
+befristet | ADJ | B2 | temporary, fixed-term | | |
+beginnen | VERB | A1 | to begin | | | begann, begonnen
+begleiten | VERB | B1 | to accompany | | |
+Begleitung | NOUN | B2 | companion; company | f | Begleitungen |
+begrenzt | ADJ | B2 | limited | | |
+Begrüßung | NOUN | B1 | greeting, welcome | f | Begrüßungen |
+behalten | VERB | B1 | to keep | | | behalte, behält
+beharrlich | ADJ | C2 | persistent(ly), stubborn(ly) | | |
+Beharrlichkeit | NOUN | C2 | perseverance | f | - |
+beibringen | VERB | B1 | to teach | | |
+beide | PRON | A2 | both | | | beiden
+beinahe | ADV | B2 | almost | | |
+Bekanntenkreis | NOUN | C1 | circle of acquaintances | m | Bekanntenkreise |
+bekommen | VERB | A1 | to get, receive | | |
+bekunden | VERB | C2 | to express (formally) | | |
+benutzen | VERB | A2 | to use | | |
+berechenbar | ADJ | C1 | predictable | | |
+bereits | ADV | B1 | already | | |
+bereuen | VERB | B2 | to regret | | |
+bergauf | ADV | C1 | uphill | | |
+Berg | NOUN | A2 | mountain | m | Berge |
+Bergsteigerin | NOUN | B2 | mountaineer (woman) | f | Bergsteigerinnen |
+berichten | VERB | B1 | to report | | |
+Berlin | PROPN | NAME | | | |
+beruflich | ADJ | B1 | professional, work-related | | |
+berufsbegleitend | ADJ | C1 | alongside one's job (part-time) | | |
+Bescheinigung | NOUN | B1 | certificate, confirmation | f | Bescheinigungen |
+beschreiben | VERB | A2 | to describe | | | beschrieb, beschrieben
+beschädigt | ADJ | B1 | damaged | | |
+besonders | ADV | A2 | especially, particularly | | |
+Besprechungsraum | NOUN | B2 | meeting room | m | Besprechungsräume |
+Besserung | NOUN | A2 | recovery (Gute Besserung! = Get well soon!) | f | - |
+Bestellnummer | NOUN | B1 | order number | f | Bestellnummern |
+bestellen | VERB | A2 | to order | | |
+bestimmt | ADJ | A2 | certain, particular; certainly | | |
+Bestimmung | NOUN | C1 | purpose, function | f | Bestimmungen |
+Bestätigung | NOUN | B1 | confirmation | f | Bestätigungen |
+besuchen | VERB | A1 | to visit | | |
+betreffen | VERB | B2 | to concern, affect | | | betraf, betrifft
+betreten | VERB | B1 | to enter | | | betrat
+Betreuer | NOUN | B2 | supervisor | m | Betreuer |
+betragen | VERB | B2 | to amount to | | | beträgt
+Bewerbungsfrist | NOUN | B2 | application deadline | f | Bewerbungsfristen |
+Bewunderung | NOUN | C1 | admiration | f | - |
+bewusst | ADJ | B1 | aware, conscious | | |
+bezahlen | VERB | A1 | to pay | | |
+Bild | NOUN | A1 | picture, image | n | Bilder |
+billig | ADJ | A1 | cheap | | | billiger
+bisher | ADV | B1 | so far, until now | | |
+bisherig | ADJ | B2 | previous, existing | | |
+bleiben | VERB | A1 | to stay | | | blieb, blieben, geblieben
+Blume | NOUN | A1 | flower | f | Blumen |
+Boden | NOUN | A2 | floor, ground | m | Böden |
+Bootsbauer | NOUN | C2 | boatbuilder | m | Bootsbauer |
+Bootsfahrt | NOUN | A2 | boat trip | f | Bootsfahrten |
+Bootswerkstatt | NOUN | C2 | boat workshop | f | Bootswerkstätten |
+bringen | VERB | A1 | to bring | | | brachte, gebracht
+Branche | NOUN | B2 | industry, sector | f | Branchen |
+Brandt | PROPN | NAME | | | |
+brauchen | VERB | A1 | to need | | |
+Brief | NOUN | A1 | letter | m | Briefe |
+Briefkasten | NOUN | A2 | mailbox | m | Briefkästen |
+Brille | NOUN | A2 | glasses | f | Brillen |
+Brot | NOUN | A1 | bread | n | Brote |
+Buch | NOUN | A1 | book | n | Bücher |
+Buchbinder | NOUN | C2 | bookbinder | m | Buchbinder |
+Buchungssystem | NOUN | C1 | booking system | n | Buchungssysteme |
+Budget | NOUN | C1 | budget | n | Budgets |
+Bus | NOUN | A1 | bus | m | Busse |
+Butter | NOUN | A1 | butter | f | - |
+Büro | NOUN | A1 | office | n | Büros |
+Chance | NOUN | B1 | chance, opportunity | f | Chancen |
+Charge | NOUN | C1 | batch | f | Chargen |
+Chef | NOUN | A2 | boss | m | Chefs |
+da | ADV | A1 | there; then | | | Da
+dabei | ADV | B1 | with it; in doing so | | | Dabei
+Dach | NOUN | B1 | roof | n | Dächer |
+denken | VERB | A1 | to think | | | dachte, gedacht
+dagegen | ADV | B1 | against it | | |
+damals | ADV | B1 | back then | | |
+Dame | NOUN | A2 | lady | f | Damen |
+danach | ADV | A2 | after that | | | Danach
+daneben | ADV | B1 | next to it | | |
+Daniel | PROPN | NAME | | | | Daniels
+Dank | NOUN | A1 | thanks (Vielen Dank = thank you very much) | m | - |
+dann | ADV | A1 | then | | | Dann
+darin | ADV | B1 | in it | | |
+Darmbakterien | NOUN | C1 | gut bacteria | pl | - |
+darüber | ADV | B1 | about it; over it (darüber hinaus = moreover) | | | Darüber
+hinaus | ADV | C1 | out; (darüber hinaus) moreover | | |
+Daten | NOUN | B1 | data | pl | - |
+Datenbank | NOUN | B2 | database | f | Datenbanken |
+dauern | VERB | A1 | to last, take (time) | | |
+davon | ADV | B1 | from it, of it | | |
+davor | ADV | B1 | before it (kurz davor = on the verge of) | | |
+dazu | ADV | B1 | in addition, with it | | | Dazu
+Delle | NOUN | C1 | dent | f | Dellen |
+Demir | PROPN | NAME | | | |
+denkbar | ADJ | C1 | conceivable | | |
+deshalb | ADV | A2 | therefore, that's why | | | Deshalb
+deutlich | ADJ | B1 | clear(ly), significant(ly) | | | deutlicher
+dick | ADJ | A1 | thick; fat | | |
+Dienstag | NOUN | A1 | Tuesday | m | Dienstage |
+Dienstmädchen | NOUN | C2 | maid, servant | n | Dienstmädchen |
+Differenz | NOUN | C1 | difference | f | Differenzen |
+dokumentieren | VERB | B2 | to document | | |
+Dorf | NOUN | A2 | village | n | Dörfer |
+dort | ADV | A1 | there | | | Dort
+dran | ADV | B1 | (spät dran sein) to be running late | | |
+drei | NUM | NUM | three | | |
+dreimal | ADV | A2 | three times | | |
+dreißig | NUM | NUM | thirty | | |
+Dresden | PROPN | NAME | | | |
+dritte | ADJ | A1 | third | | | dritten
+dunkel | ADJ | A1 | dark | | | dunkle, dunklen
+durchaus | ADV | C1 | quite, absolutely | | |
+durchatmen | VERB | B2 | to take a deep breath | | |
+durchblicken | VERB | C2 | (durchblicken lassen) to hint | | |
+durchgehen | VERB | B2 | to go through | | |
+durchstreichen | VERB | B2 | to cross out | | | durchgestrichen
+duschen | VERB | A1 | to take a shower | | |
+dünn | ADJ | A2 | thin | | |
+E-Mail | NOUN | A1 | email | f | E-Mails |
+Effekt | NOUN | B2 | effect | m | Effekte |
+effizient | ADJ | C1 | efficient | | |
+ehrlich | ADJ | A2 | honest(ly) | | | Ehrlich
+Ei | NOUN | A1 | egg | n | Eier |
+eigen | ADJ | B1 | own | | |
+eigentlich | ADJ | A2 | actual(ly), real(ly) | | |
+einfach | ADJ | A1 | simple; simply | | |
+Einarbeitung | NOUN | C1 | training of new staff | f | - |
+einatmen | VERB | B1 | to breathe in | | |
+eintragen | VERB | B2 | to enter, register | | | eingetragen
+einige | DET | A2 | some, a few | | | einigen
+einkaufen | VERB | A1 | to go shopping | | | Einkaufen
+einmal | ADV | A1 | once; one time | | |
+einräumen | VERB | B1 | to put away (on shelves); to admit | | | einräumt
+eins | NUM | NUM | one | | |
+einst | ADV | C1 | once, formerly | | |
+einstig | ADJ | C2 | former | | |
+einsteigen | VERB | A1 | to get on (a train, bus) | | |
+einundfünfzig | NUM | NUM | fifty-one | | |
+eingrenzen | VERB | C1 | to narrow down | | | einzugrenzen
+Eis | NOUN | A1 | ice cream; ice | n | - |
+Eisen | NOUN | B2 | iron | n | - |
+Eisengehalt | NOUN | C1 | iron content | m | - |
+Elbe | PROPN | NAME | the river Elbe | | |
+Elektrohaus | PROPN | NAME | (a shop name) | | |
+elf | NUM | NUM | eleven | | |
+Ende | NOUN | A1 | end | n | Enden |
+endlich | ADV | A2 | finally | | | Endlich
+entdecken | VERB | B1 | to discover | | |
+Entdeckung | NOUN | B2 | discovery | f | Entdeckungen |
+entgegennehmen | VERB | C1 | to receive, take | | |
+entnehmen | VERB | C1 | to take from, gather from | | |
+entscheidend | ADJ | B2 | decisive, crucial | | | Entscheidend
+Entscheidung | NOUN | B1 | decision | f | Entscheidungen |
+entschuldigen | VERB | A2 | to excuse; (sich) to apologize | | | Entschuldigen
+Entschuldigung | NOUN | A1 | excuse me; apology | f | Entschuldigungen |
+entsprechen | VERB | C1 | to correspond to | | | entspricht, entsprach, entspräche
+entstehen | VERB | B2 | to arise, come about | | |
+entwickeln | VERB | B1 | to develop | | |
+entziffern | VERB | C1 | to decipher | | |
+Erfolg | NOUN | B1 | success | m | Erfolge |
+erfahren | VERB | B1 | to find out, learn | | | erfuhr
+ergeben | VERB | B2 | to result in, show | | | ergab
+Ergebnis | NOUN | B1 | result | n | Ergebnisse |
+erheblich | ADJ | C1 | considerable, considerably | | |
+Erhöhung | NOUN | B2 | increase, raise | f | Erhöhungen |
+Erkenntnis | NOUN | C1 | insight, finding | f | Erkenntnisse |
+erklären | VERB | A2 | to explain | | |
+erkundigen | VERB | B2 | (sich) to ask about, inquire | | |
+Erkältung | NOUN | A2 | cold (illness) | f | Erkältungen |
+Erlaubnis | NOUN | B1 | permission | f | Erlaubnisse |
+erlaubt | ADJ | A2 | allowed | | |
+erleiden | VERB | C1 | to suffer | | | erlitten, erlittenen
+ermöglichen | VERB | B2 | to make possible | | |
+erneut | ADV | C1 | again, once more | | |
+ernst | ADJ | B1 | serious(ly) | | |
+Ernüchterung | NOUN | C2 | disillusionment | f | - |
+ersetzen | VERB | B1 | to replace | | |
+erst | ADV | A2 | only, not until; first | | | Erst
+erste | ADJ | A1 | first | | | ersten, erster, erstes
+erwarten | VERB | A2 | to expect | | |
+erweitern | VERB | B2 | to expand | | |
+erweisen | VERB | C1 | (sich als) to prove to be | | | erwies
+erzählen | VERB | A1 | to tell | | | Erzählen
+essen | VERB | A1 | to eat | | | isst, aß, gegessen
+Essen | NOUN | A1 | food, meal | n | - |
+etwa | ADV | B1 | about, approximately; for example | | |
+Euro | NOUN | A1 | euro | m | Euro |
+Europa | PROPN | NAME | Europe | | |
+Ewald | PROPN | NAME | | | |
+Existenz | NOUN | C1 | existence | f | Existenzen |
+Expedition | NOUN | C1 | expedition | f | Expeditionen |
+Experiment | NOUN | B2 | experiment | n | Experimente |
+derzeitig | ADJ | C1 | current | | |

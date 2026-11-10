@@ -1,0 +1,23 @@
+title: Eine Reklamation am Telefon
+level: B2
+grammar: PASSIV_PRAET | ZWEITEILIG | KONJ2_VERG
+story: Delle, Preisnachlass, Unannehmlichkeit
+note: **Passive in the past.** *wurde* + participle: *Die Maschine **wurde** am Dienstag **geliefert**.* With a modal: *Das Gerät **könnte** nächste Woche **geliefert werden**.*
+note: **entweder … oder** (either … or) and **zwar … aber** (it is true that … but): *Sie wurde **zwar** geliefert, **aber** beschädigt.*
+note: **Complaining politely.** *Ehrlich gesagt **hätte** ich **erwartet**, dass …* (I would have expected that …) – *Das tut mir leid. – Entschuldigen Sie bitte die Unannehmlichkeiten.*
+---
+Herr Weiß: Elektrohaus, Kundenservice, mein Name ist Paul Weiß. Was kann ich für Sie tun?
+Frau Demir: Guten Tag, hier ist Demir. Ich rufe{anrufen} an{anrufen}, weil ich vor zwei Wochen bei Ihnen eine Waschmaschine bestellt habe. Es gibt leider ein Problem.
+Herr Weiß: Das tut mir leid. Könnten Sie mir bitte Ihre Bestellnummer nennen?
+Frau Demir: Ja, die Nummer lautet vier, sieben, eins, neun, drei.
+Herr Weiß: Einen Moment bitte. Ich sehe, die Maschine wurde am Dienstag geliefert. Worum geht es genau?
+Frau Demir: Sie wurde zwar geliefert, aber offensichtlich beim Transport beschädigt. Die Tür lässt sich nicht richtig schließen, und auf der Seite ist eine tiefe Delle. Außerdem läuft{auslaufen} beim Waschen Wasser aus{auslaufen}.
+Herr Weiß: Das ist natürlich ärgerlich. Haben Sie den Schaden fotografiert?
+Frau Demir: Ja, ich habe gleich nach der Lieferung Fotos gemacht. Ehrlich gesagt hätte ich erwartet, dass die Geräte vor dem Versand kontrolliert werden.
+Herr Weiß: Da haben Sie völlig recht. Normalerweise wird jedes Gerät geprüft. Ich kann Ihnen zwei Lösungen anbieten. Entweder wird die Maschine kostenlos abgeholt und durch ein neues Gerät ersetzt, oder Sie behalten sie und bekommen einen Preisnachlass von zwanzig Prozent.
+Frau Demir: Bei einem Wasserschaden behalte ich die Maschine sicher nicht. Ich möchte einen Austausch. Wie lange würde das dauern?
+Herr Weiß: Das neue Gerät könnte bereits nächste Woche geliefert werden. Der Fahrer nimmt{mitnehmen} die alte Maschine gleich mit{mitnehmen}.
+Frau Demir: Und entstehen mir dabei irgendwelche Kosten?
+Herr Weiß: Nein, selbstverständlich nicht. Ich schicke Ihnen gleich eine Bestätigung per E-Mail. Bitte laden{hochladen} Sie die Fotos über den Link in der E-Mail hoch{hochladen}, damit der Schaden dokumentiert werden kann.
+Frau Demir: In Ordnung. Vielen Dank für Ihre Hilfe.
+Herr Weiß: Gern geschehen. Entschuldigen Sie bitte noch einmal die Unannehmlichkeiten. Auf Wiederhören!

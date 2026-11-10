@@ -1,0 +1,26 @@
+title: Die Wohnungsbesichtigung
+level: B1
+grammar: INDIREKTE_FRAGE | KONJ2_HOEFLICH | SOLANGE
+story: Kaltmiete, Nebenkosten, Fernwärme, Gehaltsabrechnung
+note: **Indirect questions** are more polite. *ob* for yes/no questions, the question word otherwise; the verb goes to the end: *Ich würde gern wissen, **ob** Haustiere erlaubt **sind**. Könnten Sie mir sagen, **wie hoch** die Nebenkosten **sind**?*
+note: **Polite requests with Konjunktiv II.** *Könnten Sie …? Ich würde gern … Wann wäre die Wohnung frei?*
+note: **Renting words.** *Kaltmiete* (rent without heating), *Nebenkosten* (extra costs), *Vermieter* (landlord), *Unterlagen* (documents).
+---
+Frau Krüger: Guten Tag, Sie müssen Herr Novak sein. Kommen Sie herein!
+Herr Novak: Guten Tag, Frau Krüger. Vielen Dank, dass ich die Wohnung heute schon ansehen darf.
+Frau Krüger: Gern. Das hier ist der Flur, rechts ist das Bad und geradeaus das Wohnzimmer.
+Herr Novak: Oh, das ist aber hell! Wie groß ist die Wohnung genau?
+Frau Krüger: Insgesamt sind es fünfundsechzig Quadratmeter, mit Balkon.
+Herr Novak: Könnten Sie mir sagen, wie hoch die Miete ungefähr ist?
+Frau Krüger: Die Kaltmiete beträgt siebenhundertzwanzig Euro. Dazu kommen etwa hundertfünfzig Euro Nebenkosten.
+Herr Novak: Und wie wird geheizt?
+Frau Krüger: Mit Fernwärme. Das ist ziemlich günstig.
+Herr Novak: Ich würde gern wissen, ob Haustiere erlaubt sind. Ich habe nämlich eine Katze.
+Frau Krüger: Eine Katze ist kein Problem, solange sie die Nachbarn nicht stört.
+Herr Novak: Sehr gut. Wann wäre die Wohnung denn frei?
+Frau Krüger: Ab dem ersten März. Es gibt allerdings noch drei andere Interessenten.
+Herr Novak: Verstehe. Welche Unterlagen brauchen Sie von mir?
+Frau Krüger: Eine Kopie Ihres Ausweises, Ihre letzten drei Gehaltsabrechnungen und eine Bescheinigung von Ihrem jetzigen Vermieter.
+Herr Novak: Die kann ich Ihnen bis morgen per E-Mail schicken.
+Frau Krüger: Prima. Dann melde ich mich Ende der Woche bei Ihnen.
+Herr Novak: Ich würde mich sehr freuen. Vielen Dank und auf Wiedersehen!

@@ -1,0 +1,19 @@
+title: Stille im Labor
+level: C1
+grammar: KONJ1 | PASSIVERSATZ | FUNKTIONSVERB
+story: Darmbakterien, Antibiotikum, Nährmedium, Charge
+note: **Konjunktiv I** reports opinions neutrally: *Fehlgeschlagene Experimente **seien** kein Scheitern, sagte er. Es **gebe** keinen Grund zur Panik.*
+note: **Alternatives to the passive.** *sich lassen* + infinitive (*das Wachstum **ließ sich hemmen***), adjectives in *-bar* (*nicht **reproduzierbar*** = cannot be reproduced), *sich erweisen als*.
+note: **Fixed noun-verb phrases.** *Beachtung finden* (to receive attention), *eine Frage aufwerfen* (to raise a question), *auf etwas stoßen* (to come across).
+---
+Seit acht Monaten untersuchte Mirjam Hofer, wie bestimmte Darmbakterien auf ein neues Antibiotikum reagieren. Die Ergebnisse ihrer ersten Versuchsreihe waren vielversprechend gewesen. Das Wachstum schädlicher Keime ließ sich deutlich hemmen, während nützliche Bakterien weitgehend unbeeinträchtigt blieben.
+
+Dann kam der Dienstag, an dem nichts mehr stimmte. Die neuen Daten widersprachen allem, was sie bisher gemessen hatte. Zunächst vermutete sie einen Messfehler, doch auch die Wiederholung ergab dasselbe Bild. Der Effekt war schlicht nicht reproduzierbar.
+
+Ihr Betreuer, Professor Lenz, reagierte gelassener als erwartet. Fehlgeschlagene Experimente seien kein Scheitern, sagte er, sondern gehörten zum Alltag der Forschung. Entscheidend sei, die Ursache systematisch einzugrenzen. Es gebe keinen Grund zur Panik, solange die Vorgehensweise sauber dokumentiert sei.
+
+Mirjam ging{durchgehen} jeden Schritt ihres Protokolls erneut durch{durchgehen}. Die Proben waren korrekt gelagert, die Geräte frisch kalibriert worden. Erst nach zwei Wochen stieß sie auf eine Unstimmigkeit. Das Nährmedium der ersten Versuchsreihe stammte aus einer anderen Charge als das der späteren Versuche. Ein unscheinbarer Unterschied im Eisengehalt hatte offenbar das Verhalten der Bakterien verändert.
+
+Was zunächst wie ein Rückschlag ausgesehen hatte, erwies sich als die eigentliche Entdeckung. Die Wirkung des Antibiotikums hing{abhängen} vom verfügbaren Eisen ab{abhängen}. Diese Erkenntnis hatte in der bisherigen Literatur kaum Beachtung gefunden. Die ursprüngliche Fragestellung war damit zwar nicht beantwortet, aber eine neue, weitaus spannendere war aufgeworfen.
+
+Als Mirjam ihre Ergebnisse ein halbes Jahr später auf einer Konferenz vorstellte, begann sie mit dem Satz: „Dieser Vortrag handelt von einem Fehler, der sich als Glücksfall herausgestellt hat.“

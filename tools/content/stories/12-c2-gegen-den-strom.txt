@@ -1,0 +1,17 @@
+title: Gegen den Strom
+level: C2
+grammar: KONJ1 | REDEWENDUNG | PARTIZIP_SATZ | MODALPARTIKEL
+story: Bootswerkstatt, Unternehmensberatung, Müritz
+note: **Reported speech in longer texts.** *Er **habe**, so pflegte er zu sagen, nicht etwa einen Traum verwirklicht.* Konjunktiv I keeps the distance between narrator and speaker.
+note: **Idioms.** *hinter vorgehaltener Hand* (privately, behind someone's back), *das Handtuch werfen* (to give up), *sich etwas vormachen* (to fool oneself), *es jemandem gleichtun* (to do the same as someone).
+note: **Participle clauses** replace a whole subordinate clause: ***Gefragt**, ob er seine Entscheidung je bereut habe, antwortet er …* = When he is asked whether …
+---
+Als Konstantin Weber mit einundfünfzig Jahren seine Stelle als Partner einer Unternehmensberatung kündigte, um in einem Dorf an der Müritz eine verfallene Bootswerkstatt zu übernehmen, ging ein Raunen durch seinen Bekanntenkreis. Die einen sprachen hinter vorgehaltener Hand von einer Midlife-Crisis. Die anderen bekundeten ihre Bewunderung, nicht ohne durchblicken zu lassen, dass sie selbst einen solchen Schritt nie wagen würden.
+
+Weber selbst neigte dazu, die Sache herunterzuspielen. Er habe, so pflegte er zu sagen, nicht etwa einen Traum verwirklicht, sondern lediglich aufgehört, sich etwas vorzumachen. Jahrzehntelang hatte er Unternehmen dabei geholfen, Abläufe zu verschlanken und Kosten zu senken. Dabei war er, wie er rückblickend einräumt, selbst zu einer Art Ablauf geworden: effizient, berechenbar und weitgehend frei von Überraschungen.
+
+Die ersten beiden Jahre in der Werkstatt gerieten zur Ernüchterung. Das Dach war undicht, die Kundschaft spärlich, und das handwerkliche Können, das er sich in Abendkursen angeeignet hatte, erwies sich als bei Weitem unzureichend. Mehr als einmal stand er kurz davor, das Handtuch zu werfen. Was ihn davon abhielt, war weniger Beharrlichkeit als der alte Bootsbauer Ewald, der die Werkstatt einst geführt hatte und nun, angeblich nur auf einen Kaffee, beinahe täglich vorbeischaute.
+
+Ewald redete nicht viel. Er sah{zusehen} zu{zusehen}, nickte gelegentlich oder nahm Weber wortlos das Werkzeug aus der Hand, um ihm einen Handgriff zu zeigen, den kein Lehrbuch beschrieb. Von ihm lernte Weber, dass Holz arbeitet, dass man es nicht zwingen, sondern nur überreden kann, und dass Geduld keine Tugend, sondern eine Technik ist.
+
+Heute, sieben Jahre später, restauriert die Werkstatt Holzboote für Kunden aus ganz Europa. Reich ist Weber damit nicht geworden, und er legt Wert auf die Feststellung, dass er niemandem rate, es ihm gleichzutun. Gefragt, ob er seine Entscheidung je bereut habe, antwortet er mit einer Gegenfrage. Ob man denn einen Fluss fragen würde, warum er nicht bergauf fließe?

@@ -1,0 +1,26 @@
+title: Der Schlüssel
+level: A1
+grammar: PRAES | NEG | W_FRAGE
+note: **Present tense.** Regular verbs take the endings *-e, -st, -t, -en*: *ich suche, du suchst, sie sucht, wir suchen*. *sein* and *haben* are irregular: *ich bin, sie ist; ich habe, sie hat*.
+note: **nicht or kein?** *kein* replaces *ein* in front of a noun: *Sie hat **keine** Zeit.* *nicht* negates everything else: *Der Schlüssel ist **nicht** auf dem Tisch.*
+note: **W-questions.** The question word comes first, the verb second: ***Wo** ist mein Schlüssel?*
+---
+Das ist Lena. Lena ist 24 Jahre alt. Sie wohnt in Köln. Sie arbeitet in einem Büro.
+
+Es ist Montag. Es ist sieben Uhr. Lena trinkt einen Kaffee und isst ein Brot. Dann sucht sie ihren Schlüssel. Der Schlüssel ist nicht auf dem Tisch. Er ist nicht in der Küche. Er ist auch nicht in der Tasche.
+
+„Wo ist mein Schlüssel?“, fragt Lena. Sie hat keine Zeit. Der Bus kommt um halb acht.
+
+Lena telefoniert mit ihrer Mutter. „Hallo Mama! Ich finde meinen Schlüssel nicht.“
+
+„Ist er im Bad?“, fragt die Mutter.
+
+Lena geht ins Bad. Nein, da ist kein Schlüssel.
+
+„Und in der Jacke?“
+
+Lena nimmt die Jacke. Sie ist rot und alt. Und da ist der Schlüssel! Er ist in der Jacke.
+
+„Danke, Mama!“, sagt Lena. Sie lacht.
+
+Dann geht sie schnell zum Bus. Es ist sieben Uhr dreißig. Der Bus ist da. Heute ist ein guter Tag.

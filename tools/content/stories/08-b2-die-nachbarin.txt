@@ -1,0 +1,28 @@
+title: Die Nachbarin im dritten Stock
+level: B2
+grammar: JE_DESTO | PARTIZIP_ADJ | ZWEITEILIG | KONJ1
+story: Bergsteigerin, Himalaya
+note: **je … desto** links two comparatives: ***Je länger** ich darüber nachdachte, **desto unruhiger** wurde ich.* The *je* clause has the verb at the end.
+note: **Participles as adjectives.** *die gestapelt**en** Zeitungen, gerahmte Fotos, getrocknete Blumen, ein selbst gebacken**er** Kuchen* – they take normal adjective endings.
+note: **Two-part connectors.** ***weder** freundlich **noch** unfreundlich* (neither … nor), ***sowohl** Übersetzerin **als auch** Bergsteigerin* (both … and).
+note: **Reported speech.** *Sie **sei** auf der Treppe ausgerutscht und **könne** kaum laufen.* – the narrator repeats her words.
+---
+Frau Lindqvist wohnte seit über vierzig Jahren im dritten Stock unseres Hauses. Sie war weder besonders freundlich noch unfreundlich. Sie grüßte knapp und verschwand dann hinter ihrer Tür. Die meisten Nachbarn hielten sie für eine etwas seltsame alte Dame.
+
+Im Frühjahr fiel{auffallen} mir auf{auffallen}, dass ihr Briefkasten überquoll. Die gestapelten Zeitungen lagen schon seit Tagen vor ihrer Tür. Je länger ich darüber nachdachte, desto unruhiger wurde ich. Schließlich klingelte ich.
+
+Es dauerte lange, bis sie öffnete. Sie stützte sich auf einen Stock, und ihr rechter Fuß steckte in einem dicken Verband. Sie sei auf der Treppe ausgerutscht, erklärte sie, und könne seitdem kaum laufen. Einkaufen sei unmöglich.
+
+„Warum haben Sie denn niemanden gefragt?“, wollte ich wissen.
+
+Sie zuckte mit den Schultern. „Ich wollte niemandem zur Last fallen.“
+
+Von da an brachte ich ihr{sie} zweimal pro Woche Lebensmittel. Anfangs nahm{entgegennehmen} sie die Tüten an der Tür entgegen{entgegennehmen} und bedankte sich höflich. Nach einigen Wochen bat{hereinbitten} sie mich herein{hereinbitten}. Ihre Wohnung war voller Bücher, gerahmter Fotos und getrockneter Blumen.
+
+Je öfter ich sie besuchte, desto mehr erzählte sie. Sie war sowohl Übersetzerin als auch Bergsteigerin gewesen und hatte in den Siebzigerjahren Expeditionen in den Himalaya begleitet. Die vergilbten Fotos zeigten eine junge Frau mit Sonnenbrille vor schneebedeckten Gipfeln.
+
+„Warum erzählen Sie das niemandem?“, fragte ich einmal.
+
+„Mich hat ja nie jemand gefragt“, sagte sie und lächelte.
+
+Als ihr Fuß verheilt war, kam sie zum ersten Mal zum Sommerfest unseres Hauses. Sie brachte{mitbringen} einen selbst gebackenen Kuchen mit{mitbringen} und erzählte von den Bergen. An diesem Abend hörte{zuhören} ihr{sie} das ganze Haus zu{zuhören}.

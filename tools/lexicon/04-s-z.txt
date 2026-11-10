@@ -1,0 +1,312 @@
+# lemma | POS | level | English | gender | plural | extra forms
+Sache | NOUN | A2 | thing, matter | f | Sachen |
+sagen | VERB | A1 | to say | | |
+Samstag | NOUN | A1 | Saturday | m | Samstage |
+Sara | PROPN | NAME | | | |
+Satz | NOUN | A1 | sentence | m | Sätze |
+sauber | ADJ | A1 | clean; properly | | |
+sauer | ADJ | A2 | sour | | | saure, sauren
+Schaden | NOUN | B1 | damage | m | Schäden |
+Schaffner | NOUN | B1 | (train) conductor | m | Schaffner |
+schauen | VERB | A1 | to look | | |
+Scheibe | NOUN | A2 | slice | f | Scheiben |
+Scheitern | NOUN | C1 | failure | n | - |
+schicken | VERB | A1 | to send | | |
+schiefgehen | VERB | B2 | to go wrong | | | schiefgegangen
+Schiff | NOUN | A1 | ship | n | Schiffe |
+Schiffspassage | NOUN | C2 | passage (on a ship) | f | Schiffspassagen |
+Schlaganfall | NOUN | C1 | stroke (medical) | m | Schlaganfälle |
+schlicht | ADV | C1 | simply, plainly | | |
+schließen | VERB | A1 | to close | | | schloss, geschlossen
+schließlich | ADV | B1 | finally; after all | | | Schließlich
+schlimm | ADJ | A2 | bad, serious | | |
+Schluss | NOUN | A2 | end (zum Schluss = finally) | m | Schlüsse |
+Schlüssel | NOUN | A1 | key | m | Schlüssel |
+schmal | ADJ | B1 | narrow | | |
+schmecken | VERB | A1 | to taste | | |
+schneebedeckt | ADJ | C1 | snow-covered | | |
+schnell | ADJ | A1 | fast, quick(ly) | | |
+Schokoladenkuchen | NOUN | A1 | chocolate cake | m | Schokoladenkuchen |
+schon | ADV | A1 | already | | |
+Schreibtisch | NOUN | A1 | desk | m | Schreibtische |
+schriftlich | ADJ | A2 | in writing | | |
+Schritt | NOUN | B1 | step | m | Schritte |
+Schuhschachtel | NOUN | C1 | shoebox | f | Schuhschachteln |
+Schulter | NOUN | A2 | shoulder (mit den Schultern zucken = to shrug) | f | Schultern |
+Schweigen | NOUN | C1 | silence | n | - |
+schweigend | ADV | C1 | silently | | |
+schwer | ADJ | A1 | difficult; heavy | | |
+schwerfallen | VERB | B2 | to be difficult (for someone) | | | schwergefallen
+Schwester | NOUN | A1 | sister | f | Schwestern |
+schädlich | ADJ | B2 | harmful | | |
+schön | ADJ | A1 | beautiful, nice | | | schöner
+Schüssel | NOUN | A2 | bowl | f | Schüsseln |
+sechs | NUM | NUM | six | | |
+sehr | ADV | A1 | very | | | Sehr
+seitdem | ADV | B1 | since then | | | Seitdem
+Seite | NOUN | A1 | side; page | f | Seiten |
+selbstverständlich | ADV | B1 | of course | | | Selbstverständlich
+Selin | PROPN | NAME | | | |
+selten | ADV | A2 | rarely | | |
+seltsam | ADJ | B1 | strange, odd | | |
+senken | VERB | B2 | to lower, reduce | | |
+setzen | VERB | A2 | (sich) to sit down | | |
+sicher | ADJ | A2 | sure, certain(ly); safe | | |
+Sicherung | NOUN | C1 | backup | f | Sicherungen |
+Sicht | NOUN | B2 | point of view (aus beruflicher Sicht = from a professional point of view) | f | - |
+sieben | NUM | NUM | seven | | |
+siebenhundertzwanzig | NUM | NUM | seven hundred and twenty | | |
+Siebzigerjahre | NOUN | B2 | the seventies | pl | - |
+sitzen | VERB | A1 | to sit | | | saß, gesessen
+so | ADV | A1 | so, like this | | | So
+Sofa | NOUN | A1 | sofa | n | Sofas |
+sofort | ADV | A1 | immediately | | |
+Software | NOUN | B1 | software | f | Softwares |
+Sommerfest | NOUN | B1 | summer party | n | Sommerfeste |
+Sonne | NOUN | A1 | sun | f | Sonnen |
+Sonnenbrille | NOUN | A2 | sunglasses | f | Sonnenbrillen |
+Sonntag | NOUN | A1 | Sunday | m | Sonntage |
+Sonntagnachmittag | NOUN | A2 | Sunday afternoon | m | Sonntagnachmittage |
+Sorge | NOUN | A2 | worry (keine Sorge = don't worry) | f | Sorgen |
+sowieso | ADV | B1 | anyway | | |
+spannend | ADJ | B1 | exciting | | | spannender, spannendere
+spazieren | VERB | A2 | (spazieren gehen) to go for a walk | | |
+spielen | VERB | A1 | to play | | |
+Spielraum | NOUN | C1 | leeway, room for manoeuvre | m | Spielräume |
+sprechen | VERB | A1 | to speak | | | spricht, sprach, sprachen, gesprochen
+spärlich | ADJ | C1 | sparse, scant | | |
+spät | ADJ | A1 | late | | | später
+Stadtarchiv | NOUN | C1 | city archive | n | Stadtarchive |
+stammen | VERB | B2 | to come from | | |
+stehen | VERB | A1 | to stand; to be written | | | stand, steht, gestanden
+stattfinden | VERB | B1 | to take place | | |
+Staub | NOUN | B2 | dust | m | - |
+stecken | VERB | B1 | to be (stuck) in; to put in | | |
+Stelle | NOUN | A2 | job, position; place | f | Stellen |
+Stempel | NOUN | B2 | stamp | m | Stempel |
+stoßen | VERB | B2 | (auf) to come across | | | stieß, gestoßen
+stimmen | VERB | A2 | to be right (Stimmt so = keep the change) | | |
+Stirn | NOUN | B2 | forehead | f | Stirnen |
+Stock | NOUN | A2 | floor (storey); walking stick | m | Stöcke |
+Straße | NOUN | A1 | street | f | Straßen |
+Student | NOUN | A1 | student | m | Studenten |
+studieren | VERB | A1 | to study | | |
+Stunde | NOUN | A1 | hour | f | Stunden |
+Stuttgart | PROPN | NAME | | | |
+stören | VERB | A2 | to disturb, bother | | |
+stützen | VERB | B2 | (sich) to lean (on) | | |
+Suche | NOUN | B1 | search (auf der Suche nach = looking for) | f | Suchen |
+suchen | VERB | A1 | to look for | | |
+Supermarkt | NOUN | A1 | supermarket | m | Supermärkte |
+systematisch | ADJ | C1 | systematic(ally) | | |
+Tablette | NOUN | A2 | tablet, pill | f | Tabletten |
+Tag | NOUN | A1 | day | m | Tage |
+Tante | NOUN | A1 | aunt | f | Tanten |
+Tasche | NOUN | A1 | bag | f | Taschen |
+Tasse | NOUN | A1 | cup | f | Tassen |
+tatsächlich | ADV | B1 | really, indeed | | |
+Team | NOUN | A2 | team | n | Teams |
+Technik | NOUN | B1 | technique; technology | f | Techniken |
+Tee | NOUN | A1 | tea | m | Tees |
+Teig | NOUN | B1 | dough | m | Teige |
+teilnehmen | VERB | B1 | to take part | | |
+Telefon | NOUN | A1 | phone | n | Telefone |
+telefonieren | VERB | A1 | to talk on the phone | | |
+telefonisch | ADJ | B1 | by phone | | |
+Termin | NOUN | A2 | appointment, meeting | m | Termine |
+Thema | NOUN | A2 | topic | n | Themen |
+tief | ADJ | A2 | deep(ly) | | |
+Tisch | NOUN | A1 | table | m | Tische |
+Tod | NOUN | B1 | death | m | Tode |
+toll | ADJ | A1 | great | | |
+Tom | PROPN | NAME | | | |
+Tomatensoße | NOUN | A1 | tomato sauce | f | Tomatensoßen |
+Tragweite | NOUN | C2 | significance, implications | f | - |
+Transport | NOUN | B1 | transport | m | Transporte |
+Traum | NOUN | A2 | dream | m | Träume |
+treffen | VERB | A2 | to meet; (eine Entscheidung treffen) to make a decision | | | trifft, traf, getroffen
+Treffen | NOUN | A2 | meeting | n | Treffen |
+Treppe | NOUN | A2 | stairs | f | Treppen |
+trinken | VERB | A1 | to drink | | | trank, getrunken
+trotzdem | ADV | A2 | nevertheless, anyway | | | Trotzdem
+tragen | VERB | A2 | to carry; to bear | | | trägt, trug, getragen
+Tugend | NOUN | C2 | virtue | f | Tugenden |
+tun | VERB | A1 | to do | | | tut, tat, getan
+täglich | ADJ | A2 | daily | | |
+Tür | NOUN | A1 | door | f | Türen |
+Tüte | NOUN | A2 | (shopping) bag | f | Tüten |
+Uhr | NOUN | A1 | clock; o'clock | f | Uhren |
+Ulm | PROPN | NAME | | | |
+umgehen | VERB | B2 | (mit) to deal with, handle | | |
+Umstellung | NOUN | C1 | changeover, switch | f | Umstellungen |
+Unannehmlichkeit | NOUN | B2 | inconvenience | f | Unannehmlichkeiten |
+unbeeinträchtigt | ADJ | C2 | unaffected | | |
+unbezahlt | ADJ | B2 | unpaid | | |
+undicht | ADJ | C1 | leaky | | |
+unfreundlich | ADJ | A2 | unfriendly | | |
+ungefähr | ADV | A2 | approximately | | |
+ungeöffnet | ADJ | B2 | unopened | | |
+Universität | NOUN | A1 | university | f | Universitäten |
+unmöglich | ADJ | A2 | impossible | | |
+unruhig | ADJ | B1 | restless, uneasy | | | unruhiger
+unscheinbar | ADJ | C1 | inconspicuous | | |
+Unstimmigkeit | NOUN | C1 | discrepancy | f | Unstimmigkeiten |
+unterbringen | VERB | B2 | to house, accommodate | | | untergebracht
+Unterlage | NOUN | B1 | document | f | Unterlagen |
+Unternehmen | NOUN | B1 | company, business | n | Unternehmen |
+Unternehmensberatung | NOUN | C1 | management consultancy | f | Unternehmensberatungen |
+Unterschied | NOUN | A2 | difference | m | Unterschiede |
+Unterstützung | NOUN | B1 | support | f | - |
+untersuchen | VERB | B1 | to examine, investigate | | |
+unterzeichnen | VERB | C1 | to sign | | |
+Unterzeichnung | NOUN | C1 | signing | f | Unterzeichnungen |
+unzureichend | ADJ | C1 | insufficient | | |
+Urgroßmutter | NOUN | B2 | great-grandmother | f | Urgroßmütter |
+Urlaubstag | NOUN | B1 | day of holiday | m | Urlaubstage |
+Ursache | NOUN | B1 | cause | f | Ursachen |
+Vater | NOUN | A1 | father | m | Väter |
+Verantwortung | NOUN | B1 | responsibility | f | Verantwortungen |
+Verband | NOUN | B1 | bandage | m | Verbände |
+Verbergen | NOUN | C2 | hiding, concealment | n | - |
+verblasst | ADJ | C1 | faded | | |
+verbringen | VERB | A2 | to spend (time) | | | verbrachte, verbracht
+Vereinbarung | NOUN | B2 | agreement | f | Vereinbarungen |
+verfallen | ADJ | C1 | dilapidated | | |
+verfügbar | ADJ | B2 | available | | |
+vergangen | ADJ | B1 | past, last | | |
+vergehen | VERB | B2 | to pass (time) | | |
+vergessen | VERB | A1 | to forget | | | vergisst, vergaß
+vergilbt | ADJ | C1 | yellowed | | |
+vergleichbar | ADJ | C1 | comparable | | |
+Vergnügen | NOUN | B1 | pleasure (Viel Vergnügen! = Have fun!) | n | - |
+Vergütung | NOUN | C1 | pay, remuneration | f | Vergütungen |
+Verhalten | NOUN | B1 | behaviour | n | - |
+verhandeln | VERB | B2 | to negotiate | | |
+verheilen | VERB | C1 | to heal | | |
+verlockend | ADJ | C1 | tempting | | |
+verlieren | VERB | A2 | to lose (verloren gehen = to get lost) | | | verlor, verloren
+Vermerk | NOUN | C1 | note, annotation | m | Vermerke |
+Vermieter | NOUN | B1 | landlord | m | Vermieter |
+vermitteln | VERB | B2 | to arrange, broker | | |
+vermögen | VERB | C2 | (zu tun vermögen) to be able to | | | vermochte, vermocht
+vermuten | VERB | B1 | to suspect, assume | | |
+vermutlich | ADV | B2 | presumably | | | Vermutlich
+Versand | NOUN | B2 | shipping, dispatch | m | - |
+verschlagen | VERB | C2 | (es hat sie hierher verschlagen) she ended up here | | |
+verschlanken | VERB | C2 | to streamline | | |
+verschieben | VERB | B2 | to postpone | | | verschob, verschoben
+verschwinden | VERB | B1 | to disappear | | | verschwand, verschwunden
+versprechen | VERB | B1 | to promise | | | verspricht, versprach, versprochen
+Verspätung | NOUN | A2 | delay | f | Verspätungen |
+verstehen | VERB | A1 | to understand | | | verstand, verstanden, Verstehe
+Versuch | NOUN | B1 | experiment; attempt | m | Versuche |
+Versuchsreihe | NOUN | C1 | series of experiments | f | Versuchsreihen |
+Vertrag | NOUN | B1 | contract | m | Verträge |
+verwirklichen | VERB | C1 | to realise (a dream) | | |
+verziehen | VERB | C2 | (keine Miene verziehen) to keep a straight face | | |
+verändern | VERB | B1 | to change | | |
+viel | ADJ | A1 | much, a lot | | | viele, vielen, Viel, Vielen
+vielversprechend | ADJ | C1 | promising | | |
+vier | NUM | NUM | four | | |
+vierzehn | NUM | NUM | fourteen | | |
+vierzig | NUM | NUM | forty | | |
+Viertelstunde | NOUN | A2 | quarter of an hour | f | Viertelstunden |
+voll | ADJ | A2 | full (voller Bücher = full of books) | | | voller
+vorbeischauen | VERB | B1 | to drop by | | | vorbeischaute
+vorbereiten | VERB | A2 | to prepare | | | vorbereitet, vorbereitete
+vorgehalten | ADJ | C2 | (hinter vorgehaltener Hand) privately, behind someone's back | | |
+Vorgehensweise | NOUN | C1 | approach, procedure | f | Vorgehensweisen |
+Vorname | NOUN | A2 | first name | m | Vornamen |
+Vorschein | NOUN | C1 | (zum Vorschein kommen) to turn up, come to light | m | - |
+vorschlagen | VERB | B1 | to suggest | | |
+vorschweben | VERB | C1 | (Was schwebt Ihnen vor?) What do you have in mind? | | |
+vorstellen | VERB | A2 | to present; (sich) to introduce oneself | | | vorstellte
+Vortrag | NOUN | B2 | talk, lecture | m | Vorträge |
+vormachen | VERB | C1 | (sich etwas vormachen) to fool oneself | | | vorzumachen
+Vorteil | NOUN | B1 | advantage | m | Vorteile | Vor-
+völlig | ADV | B1 | completely | | |
+Wachstum | NOUN | B2 | growth | n | - |
+wagen | VERB | B2 | to dare | | |
+Wand | NOUN | A1 | wall | f | Wände |
+warten | VERB | A1 | to wait | | |
+Waschen | NOUN | A2 | washing (beim Waschen = during the wash) | n | - |
+Waschmaschine | NOUN | A2 | washing machine | f | Waschmaschinen |
+Wasser | NOUN | A1 | water | n | - |
+Wasserschaden | NOUN | B2 | water damage | m | Wasserschäden |
+Weber | PROPN | NAME | | | |
+Website | NOUN | B1 | website | f | Websites |
+Wecker | NOUN | A2 | alarm clock | m | Wecker |
+weggehen | VERB | A2 | to go away | | | weggeht
+weich | ADJ | A2 | soft | | |
+Weise | NOUN | B1 | way (auf andere Weise = in another way) | f | Weisen |
+weit | ADJ | A1 | far (bei Weitem = by far) | | | weiter, Weitem
+weitaus | ADV | C1 | far (more) | | |
+weitgehend | ADV | C1 | largely | | |
+Weiterbildung | NOUN | B1 | further training | f | Weiterbildungen |
+Weiterbildungskosten | NOUN | C1 | training costs | pl | - |
+Weiß | PROPN | NAME | | | |
+werfen | VERB | B1 | to throw | | | wirft, warf, geworfen
+Werkstatt | NOUN | B1 | workshop | f | Werkstätten |
+Werkzeug | NOUN | B1 | tool | n | Werkzeuge |
+Wert | NOUN | B1 | value (Wert legen auf = to attach importance to) | m | Werte |
+wert | ADJ | B1 | worth | | |
+wertvoll | ADJ | B1 | valuable | | | Wertvolleres, wertvoller
+WG | NOUN | A2 | shared flat (Wohngemeinschaft) | f | WGs |
+wichtig | ADJ | A1 | important | | |
+widersprechen | VERB | B2 | to contradict | | | widersprach, widersprachen
+wieder | ADV | A1 | again | | |
+wiederherstellen | VERB | C1 | to restore, recover | | | wiederhergestellt
+Wiederholung | NOUN | B1 | repetition | f | Wiederholungen |
+Wiederhören | NOUN | A2 | (Auf Wiederhören!) goodbye (on the phone) | n | - |
+Wiedersehen | NOUN | A1 | (Auf Wiedersehen!) goodbye | n | - |
+wiegen | VERB | B1 | to weigh | | |
+Winter | NOUN | A1 | winter | m | Winter |
+Wirkung | NOUN | B2 | effect | f | Wirkungen |
+Witz | NOUN | A2 | joke | m | Witze |
+Woche | NOUN | A1 | week | f | Wochen |
+Wochenende | NOUN | A1 | weekend | n | Wochenenden |
+wochenlang | ADV | B2 | for weeks | | |
+wohl | ADV | B1 | probably (wohl aber = but certainly) | | | Wohl
+wohnen | VERB | A1 | to live | | |
+Wohnung | NOUN | A1 | flat, apartment | f | Wohnungen |
+Wohnzimmer | NOUN | A1 | living room | n | Wohnzimmer |
+wortlos | ADV | C1 | without a word | | |
+wütend | ADJ | B1 | angry | | |
+Yilmaz | PROPN | NAME | | | |
+zehn | NUM | NUM | ten | | |
+zeigen | VERB | A1 | to show | | |
+Zeit | NOUN | A1 | time (zeit ihres Lebens = all her life) | f | Zeiten | zeit
+Zeitung | NOUN | A1 | newspaper | f | Zeitungen |
+Zertifizierung | NOUN | C1 | certification | f | Zertifizierungen |
+ziemlich | ADV | A2 | quite, rather | | |
+Zimmer | NOUN | A1 | room | n | Zimmer |
+Zimt | NOUN | B1 | cinnamon | m | - |
+Zucker | NOUN | A1 | sugar | m | - |
+zucken | VERB | C1 | (mit den Schultern zucken) to shrug | | |
+zuerst | ADV | A1 | first, at first | | | Zuerst
+Zug | NOUN | A1 | train | m | Züge |
+zuhören | VERB | A2 | to listen | | |
+zunächst | ADV | B2 | at first, initially | | | Zunächst
+zurück | ADV | A2 | back | | |
+zurückkehren | VERB | B1 | to return | | |
+Zusage | NOUN | C1 | acceptance (of an application), job offer | f | Zusagen |
+zusammen | ADV | A1 | together | | | Zusammen
+zusehen | VERB | B1 | to watch | | |
+zusätzlich | ADJ | B1 | additional | | |
+zwanzig | NUM | NUM | twenty | | |
+zwei | NUM | NUM | two | | | Zwei
+zweimal | ADV | A1 | twice | | |
+zweiundachtzig | NUM | NUM | eighty-two | | |
+zwölf | NUM | NUM | twelve | | | Zwölf
+zwingen | VERB | B2 | to force | | |
+ärgerlich | ADJ | B1 | annoying | | |
+Übernahme | NOUN | C1 | covering (of costs); takeover | f | Übernahmen |
+übernehmen | VERB | B1 | to take over; to cover (costs) | | | übernimmt, übernahm, übernommen, übernähme
+überquellen | VERB | C2 | to overflow | | | überquoll
+Überraschung | NOUN | A2 | surprise | f | Überraschungen |
+überreden | VERB | B2 | to persuade | | |
+Übersetzerin | NOUN | B1 | translator (woman) | f | Übersetzerinnen |
+üblich | ADJ | B1 | usual | | |
+übrigens | ADV | B1 | by the way | | |
+ursprünglich | ADJ | B2 | original(ly) | | |
+wenig | ADJ | A2 | little, few | | | weniger

@@ -1,0 +1,24 @@
+title: Die neue Wohnung
+level: A2
+grammar: WECHSELPRAEP | KOMPARATIV | WEIL
+note: **Two-way prepositions.** *in, an, auf, über, neben …* take the accusative for a direction (*wohin?*) and the dative for a place (*wo?*): *Sara hängt die Lampe über **den** Tisch.* → *Die Lampe hängt über **dem** Tisch.*
+note: **Comparison.** *groß – größer – am größten*, *hell – heller – am hellsten*. *als* after the comparative: *schöner **als** seine alte Wohnung*.
+note: **weil** sends the verb to the end: *…, **weil** er viele Kisten **hat**.*
+---
+Jonas ist im März nach Leipzig gezogen. Er hat eine neue Arbeit gefunden und braucht jetzt eine Wohnung. Seine alte Wohnung in Dresden war klein und dunkel. Die neue Wohnung ist größer und heller. Sie hat zwei Zimmer, eine Küche, ein Bad und einen Balkon.
+
+Am Samstag kommen seine Freunde Sara und Ali. Sie helfen ihm, weil er viele Kisten hat.
+
+„Wohin stellen wir das Sofa?“, fragt Sara.
+
+„An die Wand, neben das Fenster“, sagt Jonas.
+
+Ali trägt den Tisch in die Küche. Sara hängt die Lampe über den Tisch. Jonas legt die Bücher in das Regal.
+
+Nach drei Stunden steht alles an seinem Platz. Das Sofa steht an der Wand, die Lampe hängt über dem Tisch und die Bücher liegen im Regal. Nur eine Pflanze steht noch auf dem Boden.
+
+„Die stellen wir auf den Balkon“, sagt Ali. „Dort ist es am hellsten.“
+
+Am Abend sitzen die drei auf dem Balkon. Sie trinken Limonade und essen Pizza, weil niemand kochen möchte. Jonas ist glücklich. Die Wohnung ist schöner als seine alte Wohnung, und die Miete ist billiger.
+
+„Leipzig gefällt mir besser, als ich gedacht habe“, sagt er.

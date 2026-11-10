@@ -1,6 +1,22 @@
 {
   "books": [
     {
+      "id": "stories",
+      "title": "Kurzgeschichten",
+      "subtitle": "12 short stories",
+      "level": "A1–C2",
+      "file": "books/stories.json",
+      "version": 1
+    },
+    {
+      "id": "dialogues",
+      "title": "Alltagsgespräche",
+      "subtitle": "5 everyday conversations",
+      "level": "A1–C1",
+      "file": "books/dialogues.json",
+      "version": 1
+    },
+    {
       "id": "alice",
       "title": "Alice im Wunderland",
       "subtitle": "Leseroman",

@@ -1,0 +1,245 @@
+# lemma | POS | level | English | gender | plural | extra forms
+Fahrer | NOUN | A2 | driver | m | Fahrer |
+Fahrkarte | NOUN | A1 | ticket | f | Fahrkarten |
+Fahrrad | NOUN | A1 | bicycle | n | Fahrräder |
+Fahrt | NOUN | A1 | journey, ride | f | Fahrten |
+fahren | VERB | A1 | to go (by vehicle), drive | | | fährt, fährst, fuhr, gefahren
+Fall | NOUN | B1 | case (auf keinen Fall = under no circumstances) | m | Fälle |
+fallen | VERB | A2 | to fall (zur Last fallen = to be a burden) | | | fällt, fiel, gefallen
+falsch | ADJ | A1 | wrong | | |
+Familie | NOUN | A1 | family | f | Familien |
+Familienchronik | NOUN | C2 | family chronicle | f | Familienchroniken |
+Familiengeschichte | NOUN | B2 | family history | f | Familiengeschichten |
+finden | VERB | A1 | to find | | | fand, gefunden, finde
+fast | ADV | A2 | almost | | |
+Fehler | NOUN | A2 | mistake, error | m | Fehler |
+fehlgeschlagen | ADJ | C1 | failed | | |
+fehlen | VERB | A2 | to be missing (Was fehlt Ihnen? = What's wrong?) | | |
+Fenster | NOUN | A1 | window | n | Fenster |
+Fernwärme | NOUN | C1 | district heating | f | - |
+festhalten | VERB | B2 | to record; to hold on to | | |
+festsetzen | VERB | C1 | (sich) to settle, cling | | | festsetzte
+feststehen | VERB | C1 | to be certain | | |
+Feststellung | NOUN | C1 | statement, finding | f | Feststellungen |
+Fieber | NOUN | A1 | fever | n | - |
+Firma | NOUN | A1 | company | f | Firmen |
+Fischbrötchen | NOUN | A2 | fish sandwich | n | Fischbrötchen |
+fließen | VERB | B1 | to flow | | |
+Flur | NOUN | A2 | hallway | m | Flure |
+Fluss | NOUN | A2 | river | m | Flüsse |
+Form | NOUN | A2 | form, shape; baking tin | f | Formen |
+Forschung | NOUN | B2 | research | f | Forschungen |
+Forschungsinstitut | NOUN | C1 | research institute | n | Forschungsinstitute |
+fortan | ADV | C2 | from then on | | |
+fotografieren | VERB | A2 | to take a photo of | | |
+Foto | NOUN | A1 | photo | n | Fotos |
+Frage | NOUN | A1 | question | f | Fragen |
+fragen | VERB | A1 | to ask | | | Gefragt
+Fragestellung | NOUN | C1 | (research) question | f | Fragestellungen |
+Frankfurt | PROPN | NAME | | | |
+Frau | NOUN | A1 | woman; Mrs, Ms | f | Frauen |
+frei | ADJ | A1 | free; available | | |
+Freitag | NOUN | A1 | Friday | m | Freitage |
+Freitagabend | NOUN | A1 | Friday evening | m | Freitagabende |
+freuen | VERB | A2 | (sich) to be glad; to look forward to | | |
+Freund | NOUN | A1 | friend | m | Freunde |
+freundlich | ADJ | A1 | friendly, kind(ly) | | |
+frisch | ADJ | A2 | fresh(ly) | | |
+früh | ADJ | A1 | early | | |
+früher | ADV | A2 | earlier, in the past | | |
+Frühjahr | NOUN | B1 | spring | n | Frühjahre |
+Frühstück | NOUN | A1 | breakfast | n | Frühstücke |
+Fuß | NOUN | A1 | foot | m | Füße |
+fünfundsechzig | NUM | NUM | sixty-five | | |
+fünfundvierzig | NUM | NUM | forty-five | | |
+fünfzehn | NUM | NUM | fifteen | | |
+ganz | ADJ | A1 | whole; quite | | |
+gar | ADV | B2 | at all (gar nicht = not at all) | | |
+geben | VERB | A1 | to give (es gibt = there is, there are) | | | gibt, gab, gebe, gegeben
+bitten | VERB | A2 | to ask (for) | | | bat, gebeten
+geboren | ADJ | A1 | born | | |
+Gebäude | NOUN | A2 | building | n | Gebäude |
+Geduld | NOUN | B1 | patience | f | - |
+gefallen | VERB | A2 | to please (es gefällt mir = I like it) | | | gefällt
+führen | VERB | B1 | to lead, run (zu Ende führen = to complete) | | |
+gehen | VERB | A1 | to go, walk | | | ging, gegangen, geht, gehst, gehe
+Gegenfrage | NOUN | C1 | counter-question | f | Gegenfragen |
+Gehalt | NOUN | B1 | salary | n | Gehälter |
+Gehaltsabrechnung | NOUN | B2 | payslip | f | Gehaltsabrechnungen |
+Gehaltsanpassung | NOUN | C1 | salary adjustment | f | Gehaltsanpassungen |
+heizen | VERB | B1 | to heat | | |
+helfen | VERB | A1 | to help | | | hilft, half, geholfen
+gehören | VERB | A2 | to belong (to) | | |
+kommen | VERB | A1 | to come | | | kam, kamen, gekommen, kommt, Kommen
+lagern | VERB | B2 | to store | | |
+gelassen | ADJ | C1 | calm(ly), relaxed | | |
+laufen | VERB | A1 | to run, walk; to go (well) | | | läuft, lief, gelaufen
+Geld | NOUN | A1 | money | n | Gelder |
+gelegentlich | ADV | B2 | occasionally | | |
+legen | VERB | A2 | to put, lay (down); (Wert legen auf) to value | | | lege
+lernen | VERB | A1 | to learn | | |
+lesen | VERB | A1 | to read | | | liest, las, gelesen, gelesenen
+liefern | VERB | B1 | to deliver | | |
+machen | VERB | A1 | to make, do | | |
+messen | VERB | B1 | to measure | | | misst, maß, gemessen
+genau | ADJ | A1 | exact(ly) | | |
+nehmen | VERB | A1 | to take | | | nimmt, nahm, genommen, nehme
+geplant | ADJ | B1 | planned | | |
+prüfen | VERB | B1 | to check, test | | |
+gerade | ADV | A2 | just (now); straight | | |
+geradeaus | ADV | A1 | straight ahead | | |
+gerahmt | ADJ | C1 | framed | | |
+rechnen | VERB | B1 | to calculate; (mit) to expect | | |
+regnen | VERB | A1 | to rain | | |
+geraten | VERB | C1 | to turn out, end up (zur Ernüchterung geraten = turn out disappointing) | | | gerieten, gerät
+gern | ADV | A1 | gladly; (+ verb) to like doing | | | Gern
+Geruch | NOUN | B2 | smell | m | Gerüche |
+Gerät | NOUN | B1 | device, appliance | n | Geräte |
+geschehen | VERB | B1 | to happen (Gern geschehen = you're welcome) | | |
+scheinen | VERB | B1 | to shine; to seem | | | schien, geschienen
+schlafen | VERB | A1 | to sleep | | | schläft, schlief, geschlafen
+schneiden | VERB | A2 | to cut | | | geschnitten
+schreiben | VERB | A1 | to write | | | schrieb, geschrieben, schreibe
+schweigen | VERB | C1 | to be silent | | | schwieg, geschwiegen
+Geschäftsführung | NOUN | C1 | management (of a company) | f | - |
+schälen | VERB | B1 | to peel | | |
+sehen | VERB | A1 | to see | | | sieht, sah, gesehen, sehe
+Gespräch | NOUN | A2 | conversation; interview | n | Gespräche |
+gestapelt | ADJ | C1 | stacked | | |
+stellen | VERB | A2 | to put (upright); (eine Frage stellen) to ask | | |
+gestern | ADV | A1 | yesterday | | |
+Getreidespeicher | NOUN | C2 | granary | m | Getreidespeicher |
+getrennt | ADJ | A2 | separate(ly) | | |
+getrocknet | ADJ | B2 | dried | | |
+wissen | VERB | A1 | to know | | | weiß, weißt, wusste, gewusst, Weißt
+ziehen | VERB | B1 | to move (house); to pull | | | zog, gezogen
+üben | VERB | A2 | to practise | | |
+Gipfel | NOUN | B2 | summit, peak | m | Gipfel |
+glauben | VERB | A1 | to believe, think | | |
+gleich | ADV | A2 | right away; same | | |
+gleichtun | VERB | C2 | (es jemandem gleichtun) to do the same as someone | | | gleichzutun
+Gleis | NOUN | A2 | platform, track | n | Gleise |
+Glück | NOUN | A2 | luck (zum Glück = luckily) | n | - |
+glücklich | ADJ | A1 | happy | | |
+Glücksfall | NOUN | C1 | stroke of luck | m | Glücksfälle |
+Grad | NOUN | A2 | degree | m | Grade |
+groß | ADJ | A1 | big, tall | | | größer
+Großmutter | NOUN | A1 | grandmother | f | Großmütter |
+Grund | NOUN | B1 | reason | m | Gründe |
+Größe | NOUN | A2 | size | f | Größen |
+Größenordnung | NOUN | C1 | order of magnitude, ballpark | f | Größenordnungen |
+grüßen | VERB | A2 | to greet, say hello | | |
+gut | ADJ | A1 | good, well | | | besser
+günstig | ADJ | A2 | cheap, good value | | |
+Hafen | NOUN | A2 | harbour, port | m | Häfen |
+hager | ADJ | C2 | gaunt, lean | | |
+halb | ADJ | A1 | half | | |
+Hals | NOUN | A2 | throat; neck | m | Hälse |
+Halsschmerzen | NOUN | A2 | sore throat | pl | - |
+halten | VERB | A2 | to hold; (für) to consider | | | hält, hielt, hielten, gehalten, halte
+Hamburg | PROPN | NAME | | | |
+Hand | NOUN | A1 | hand | f | Hände |
+handeln | VERB | B2 | (von) to be about | | |
+Handgriff | NOUN | C1 | (skilled) move, grip | m | Handgriffe |
+Handschrift | NOUN | B2 | handwriting | f | Handschriften |
+Handtuch | NOUN | A2 | towel (das Handtuch werfen = to give up) | n | Handtücher |
+handwerklich | ADJ | C1 | craft, manual | | |
+heimlich | ADV | B1 | secretly | | |
+Heimreise | NOUN | C1 | trip home | f | Heimreisen |
+Heimweg | NOUN | B1 | way home | m | Heimwege |
+hell | ADJ | A1 | bright, light | | | heller, hellsten
+hemmen | VERB | C1 | to inhibit | | |
+herausstellen | VERB | C1 | (sich) to turn out | | | herausgestellt
+Herbst | NOUN | A1 | autumn | m | Herbste |
+herein | ADV | B1 | in (Kommen Sie herein! = Come in!) | | |
+hereinbitten | VERB | C1 | to ask in | | |
+Herr | NOUN | A1 | Mr; gentleman | m | Herren |
+herunterspielen | VERB | C1 | to play down | | | herunterzuspielen
+hervorragend | ADJ | B2 | excellent(ly) | | |
+heute | ADV | A1 | today | | | Heute
+hier | ADV | A1 | here | | | Hier
+hierher | ADV | B1 | here (to this place) | | | Hierher
+Hilde | PROPN | NAME | | | |
+Hilfe | NOUN | A1 | help | f | Hilfen |
+Hilfsorganisation | NOUN | C1 | aid organisation | f | Hilfsorganisationen |
+Himalaya | PROPN | NAME | the Himalayas | | |
+hoch | ADJ | A2 | high | | | hohe, höher, höhere, höheres
+hochladen | VERB | B1 | to upload | | |
+Hofer | PROPN | NAME | | | |
+Hoffmann | PROPN | NAME | | | |
+Holz | NOUN | B1 | wood | n | Hölzer |
+Holzboot | NOUN | C1 | wooden boat | n | Holzboote |
+Honig | NOUN | A2 | honey | m | - |
+hundertfünfzig | NUM | NUM | a hundred and fifty | | |
+Husten | NOUN | A2 | cough | m | - |
+hängen | VERB | A2 | to hang | | |
+höflich | ADJ | A2 | polite(ly) | | |
+immer | ADV | A1 | always | | |
+Informatik | NOUN | A2 | computer science | f | - |
+Information | NOUN | A1 | information | f | Informationen |
+informieren | VERB | A2 | to inform | | |
+insgesamt | ADV | B1 | in total | | | Insgesamt
+insofern | ADV | C1 | in this respect | | | Insofern
+Institut | NOUN | B2 | institute | n | Institute |
+interessant | ADJ | A1 | interesting | | |
+Interessent | NOUN | C1 | interested party, applicant | m | Interessenten |
+inzwischen | ADV | B1 | meanwhile, by now | | |
+Jacke | NOUN | A1 | jacket | f | Jacken |
+Jahr | NOUN | A1 | year | n | Jahre |
+Jahrgang | NOUN | C1 | year (of records), volume | m | Jahrgänge |
+jahrzehntelang | ADV | C1 | for decades | | | Jahrzehntelang
+Januar | NOUN | A1 | January | m | - |
+jetzig | ADJ | B2 | current, present | | |
+jetzt | ADV | A1 | now | | |
+Jonas | PROPN | NAME | | | |
+jung | ADJ | A1 | young | | |
+Kaffee | NOUN | A1 | coffee | m | Kaffees |
+kalibrieren | VERB | C1 | to calibrate | | |
+kalt | ADJ | A1 | cold | | |
+Kaltmiete | NOUN | B1 | basic rent (without heating) | f | Kaltmieten |
+Kanada | PROPN | NAME | Canada | | |
+Karte | NOUN | A1 | card; ticket; map | f | Karten |
+Kartoffelsalat | NOUN | A1 | potato salad | m | Kartoffelsalate |
+Katze | NOUN | A1 | cat | f | Katzen |
+kaum | ADV | B1 | hardly | | |
+Keim | NOUN | C1 | germ | m | Keime |
+Kind | NOUN | A1 | child | n | Kinder |
+Kiste | NOUN | A2 | box, crate | f | Kisten |
+klingen | VERB | B1 | to sound | | | klang, klingt
+klar | ADJ | A2 | clear (klar werden = to become clear, realise) | | |
+Kleid | NOUN | A1 | dress; (plural) clothes | n | Kleider |
+klein | ADJ | A1 | small | | |
+klingeln | VERB | A1 | to ring | | |
+knapp | ADJ | B2 | brief(ly), curt(ly); just under | | |
+kochen | VERB | A1 | to cook | | |
+Kollegin | NOUN | A2 | colleague (woman) | f | Kolleginnen |
+komisch | ADJ | A2 | strange, funny | | |
+Konferenz | NOUN | B1 | conference | f | Konferenzen |
+konkretisieren | VERB | C1 | to make more specific | | |
+Konstantin | PROPN | NAME | | | |
+kontrollieren | VERB | A2 | to check | | |
+Kopenhagen | PROPN | NAME | Copenhagen | | |
+Kopf | NOUN | A1 | head | m | Köpfe |
+Kopie | NOUN | A2 | copy | f | Kopien |
+korrekt | ADJ | B1 | correct(ly) | | |
+Kosten | NOUN | B1 | costs | pl | - |
+kostenlos | ADJ | A2 | free of charge | | |
+kosten | VERB | A1 | to cost | | |
+Krankenhaus | NOUN | A1 | hospital | n | Krankenhäuser |
+krankschreiben | VERB | B1 | to give someone a sick note | | |
+Kritik | NOUN | B1 | criticism | f | Kritiken |
+Krüger | PROPN | NAME | | | |
+Kuchen | NOUN | A1 | cake | m | Kuchen |
+Kunde | NOUN | A1 | customer | m | Kunden |
+Kundenservice | NOUN | B1 | customer service | m | - |
+Kundschaft | NOUN | C1 | customers, clientele | f | - |
+Kurs | NOUN | A1 | course, class | m | Kurse |
+kurz | ADJ | A1 | short, brief(ly) | | |
+Köln | PROPN | NAME | Cologne | | |
+Küche | NOUN | A1 | kitchen | f | Küchen |
+Kühlschrank | NOUN | A1 | fridge | m | Kühlschränke |
+kündigen | VERB | B1 | to resign, quit (a job) | | |
+Haus | NOUN | A1 | house (nach Hause = home; zu Hause = at home) | n | Häuser | Hause
+Hauptbahnhof | NOUN | A1 | main station | m | Hauptbahnhöfe |
+Hausnummer | NOUN | A1 | house number; (informal: eine Hausnummer) a serious figure | f | Hausnummern |
+Haustier | NOUN | A2 | pet | n | Haustiere |

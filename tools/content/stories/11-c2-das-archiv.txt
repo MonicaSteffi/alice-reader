@@ -1,0 +1,19 @@
+title: Das Archiv
+level: C2
+grammar: RELATIV_GENITIV | PARTIZIPATTRIBUT | REDEWENDUNG | KONJ2_VERG
+story: Getreidespeicher, Melderegister, Buchbinder, Dienstmädchen
+note: **Genitive relative pronouns.** *dessen* (masc./neut.) and *deren* (fem./plural) express possession: *ein Vermerk, **dessen** Tragweite …* (a note whose significance …); *eine Frau, **deren** Name …*.
+note: **Idioms.** *keine Miene verziehen* (to keep a straight face), *zum Vorschein kommen* (to turn up), *es hat sie hierher verschlagen* (she ended up here), *sich abzeichnen* (to emerge).
+note: **Elevated style.** *Sie **hätte nicht zu sagen vermocht**, ob …* = she could not have said whether … – *vermögen* + *zu* is literary.
+---
+Das Stadtarchiv war in einem Gebäude untergebracht, dem man seine einstige Bestimmung als Getreidespeicher noch immer ansah: dicke Mauern, schmale Fenster und ein Geruch nach Staub und altem Papier, der sich in den Kleidern festsetzte. Hierher hatte es Paula an einem regnerischen Oktobernachmittag verschlagen, auf der Suche nach einem Namen, der in keiner Familienchronik auftauchte.
+
+Ihre Großmutter hatte zeit ihres Lebens beharrlich geschwiegen, sobald die Rede auf ihren eigenen Vater kam. Erst nach ihrem Tod war in einer Schuhschachtel ein vergilbter Brief zum Vorschein gekommen, unterzeichnet mit einem Vornamen, der niemandem in der Familie etwas sagte: Anton.
+
+Der Archivar, ein hagerer Mann mit randloser Brille, hörte{zuhören} ihr{sie} zu{zuhören}, ohne eine Miene zu verziehen. Dann verschwand er wortlos zwischen den Regalen und kehrte{zurückkehren} nach einer Viertelstunde mit drei Aktenordnern zurück{zurückkehren}. „Melderegister, Jahrgänge neunzehnhundertzwanzig bis dreißig“, sagte er knapp. „Viel Vergnügen.“
+
+Paula verbrachte Stunden damit, verblasste Handschriften zu entziffern. Je weiter sie las, desto deutlicher zeichnete{abzeichnen} sich ein Bild ab{abzeichnen}, das so gar nicht zu der Familiengeschichte passen wollte, die man ihr{sie} erzählt hatte. Anton, Buchbinder, ledig, war im Frühjahr neunzehnhundertachtundzwanzig in dasselbe Haus gezogen, in dem ihre Urgroßmutter als Dienstmädchen gearbeitet hatte. Ein Jahr später war er nach Amerika ausgewandert. Die Großmutter wurde im Herbst desselben Jahres geboren.
+
+Ob Anton von ihrer Existenz gewusst hatte, ließ sich den Akten nicht entnehmen. Wohl aber fand Paula einen Vermerk, dessen Tragweite ihr{sie} erst auf dem Heimweg bewusst wurde. Antons Antrag auf Ausreise trug den Stempel einer Hilfsorganisation, die Auswanderern Schiffspassagen vermittelte, und als Begleitung war eine Frau mit Kind eingetragen, deren Name durchgestrichen worden war.
+
+Sie hätte nicht zu sagen vermocht, ob sie mehr Antworten mit nach Hause nahm oder mehr Fragen. Fest{feststehen} stand{feststehen} nur, dass das Schweigen der Großmutter fortan anders klang: nicht mehr wie ein Verbergen, sondern wie ein Abschied, den niemand zu Ende geführt hatte.

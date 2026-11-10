@@ -1,0 +1,177 @@
+# lemma | POS | level | English | gender | plural | extra forms
+Labskaus | NOUN | B2 | Labskaus (northern German dish of corned beef, potatoes and beetroot) | n | - |
+lachen | VERB | A1 | to laugh | | |
+liegen | VERB | A1 | to lie, be (lying) | | | lag, lagen, gelegen
+Lampe | NOUN | A1 | lamp | f | Lampen |
+lang | ADJ | A1 | long | | | länger
+lange | ADV | A1 | for a long time | | | Lange
+langsam | ADJ | A1 | slow(ly) | | |
+Last | NOUN | B2 | burden (zur Last fallen = to be a burden) | f | Lasten |
+laut | ADJ | A1 | loud(ly), aloud | | |
+lauten | VERB | B1 | to be, read (Die Nummer lautet … = The number is …) | | |
+leben | VERB | A1 | to live | | |
+Leben | NOUN | A1 | life (zeit ihres Lebens = all her life) | n | Leben |
+Lebensmittel | NOUN | A2 | food, groceries | pl | - |
+ledig | ADJ | A2 | single, unmarried | | |
+lediglich | ADV | C1 | merely, only | | |
+Lehrbuch | NOUN | B1 | textbook | n | Lehrbücher |
+leid | ADJ | A2 | (es tut mir leid = I'm sorry) | | |
+leider | ADV | A1 | unfortunately | | |
+Leipzig | PROPN | NAME | | | |
+leiten | VERB | B1 | to lead, manage | | |
+leitend | ADJ | C1 | senior, managing | | |
+Lena | PROPN | NAME | | | |
+Lenz | PROPN | NAME | | | |
+letzte | ADJ | A1 | last | | | letzten, letztes, letzter
+Lieferung | NOUN | B1 | delivery | f | Lieferungen |
+Limonade | NOUN | A1 | lemonade | f | Limonaden |
+Lindqvist | PROPN | NAME | | | |
+Link | NOUN | B1 | link | m | Links |
+Literatur | NOUN | B2 | literature | f | Literaturen |
+Lunge | NOUN | B1 | lung | f | Lungen |
+lächeln | VERB | A2 | to smile | | |
+Löffel | NOUN | A1 | spoon | m | Löffel |
+Lösung | NOUN | A2 | solution | f | Lösungen |
+Mal | NOUN | A1 | time (zum ersten Mal = for the first time) | n | Male |
+Mama | NOUN | A1 | mum | f | Mamas |
+Mann | NOUN | A1 | man | m | Männer |
+Maschine | NOUN | B1 | machine | f | Maschinen |
+Mauer | NOUN | B1 | wall | f | Mauern |
+Medikament | NOUN | A2 | medicine | n | Medikamente |
+Mehl | NOUN | A2 | flour | n | - |
+mehr | ADV | A1 | more | | | Mehr
+meinen | VERB | A1 | to mean; to think | | |
+meiste | ADJ | A2 | most | | | meisten
+melden | VERB | B1 | (sich) to get in touch | | |
+Melderegister | NOUN | C2 | register of residents | n | Melderegister |
+Mensa | NOUN | A2 | university canteen | f | Mensen |
+Messfehler | NOUN | C1 | measurement error | m | Messfehler |
+Mia | PROPN | NAME | | | |
+Midlife-Crisis | NOUN | C1 | midlife crisis | f | - |
+Miene | NOUN | C2 | facial expression (keine Miene verziehen = to keep a straight face) | f | Mienen |
+Miete | NOUN | A2 | rent | f | Mieten |
+Milch | NOUN | A1 | milk | f | - |
+Minute | NOUN | A1 | minute | f | Minuten |
+Mirjam | PROPN | NAME | | | |
+Mischung | NOUN | B1 | mixture | f | Mischungen |
+Misserfolg | NOUN | C1 | failure | m | Misserfolge |
+mitbringen | VERB | A2 | to bring along | | |
+mitnehmen | VERB | A2 | to take along | | |
+Mittag | NOUN | A1 | noon, midday | m | Mittage |
+mitwirken | VERB | C1 | to take part, contribute | | | mitzuwirken
+Moment | NOUN | A1 | moment | m | Momente |
+momentan | ADV | B2 | at the moment | | |
+Monat | NOUN | A1 | month | m | Monate |
+Montag | NOUN | A1 | Monday | m | Montage |
+morgen | ADV | A1 | tomorrow | | |
+Morgen | NOUN | A1 | morning (Guten Morgen = good morning) | m | Morgen |
+Mund | NOUN | A1 | mouth | m | Münder |
+Museum | NOUN | A1 | museum | n | Museen |
+Mut | NOUN | B1 | courage | m | - |
+Mutter | NOUN | A1 | mother | f | Mütter |
+März | NOUN | A1 | March | m | - |
+möglich | ADJ | A2 | possible | | |
+Möglichkeit | NOUN | B1 | possibility, opportunity | f | Möglichkeiten |
+müde | ADJ | A1 | tired | | |
+München | PROPN | NAME | Munich | | |
+Müritz | PROPN | NAME | (a large lake in northern Germany) | | |
+Müsli | NOUN | A1 | muesli | n | Müslis |
+nachdenken | VERB | B1 | to think (about), reflect | | | nachdachte
+Nachbar | NOUN | A2 | neighbour | m | Nachbarn |
+Nachmittag | NOUN | A1 | afternoon | m | Nachmittage |
+Nachteil | NOUN | B1 | disadvantage | m | Nachteile |
+Name | NOUN | A1 | name | m | Namen |
+nass | ADJ | A2 | wet | | |
+natürlich | ADV | A1 | of course; natural(ly) | | |
+Nebenkosten | NOUN | B1 | extra costs (utilities) | pl | - |
+neigen | VERB | C1 | (zu) to tend to | | |
+nennen | VERB | B1 | to name, tell | | | nannte, genannt
+neu | ADJ | A1 | new | | |
+neun | NUM | NUM | nine | | |
+neunzehnhundertachtundzwanzig | NUM | NUM | nineteen twenty-eight (1928) | | |
+neunzehnhundertzwanzig | NUM | NUM | nineteen twenty (1920) | | |
+nicken | VERB | B1 | to nod | | |
+nie | ADV | A1 | never | | |
+nirgends | ADV | B2 | nowhere | | |
+normalerweise | ADV | A2 | normally | | | Normalerweise
+Notiz | NOUN | B1 | note | f | Notizen |
+Novak | PROPN | NAME | | | |
+November | NOUN | A1 | November | m | - |
+Nudel | NOUN | A1 | noodle; (plural) pasta | f | Nudeln |
+Nummer | NOUN | A1 | number | f | Nummern |
+nun | ADV | B1 | now | | |
+nur | ADV | A1 | only | | | Nur
+nächste | ADJ | A1 | next | | | nächsten, nächster, nächstes
+Nähe | NOUN | A2 | vicinity (in der Nähe = nearby) | f | - |
+Nährmedium | NOUN | C1 | culture medium | n | Nährmedien |
+nämlich | ADV | B1 | you see, namely | | |
+nützlich | ADJ | B1 | useful | | |
+Ofen | NOUN | A2 | oven | m | Öfen |
+offenbar | ADV | C1 | apparently | | |
+offensichtlich | ADV | B2 | obviously | | |
+oft | ADV | A1 | often | | | öfter
+Okafor | PROPN | NAME | | | |
+Oktobernachmittag | NOUN | B2 | October afternoon | m | Oktobernachmittage |
+Oma | NOUN | A1 | grandma | f | Omas |
+Ordnung | NOUN | A2 | order (In Ordnung = all right) | f | Ordnungen |
+öffnen | VERB | A1 | to open | | |
+Panik | NOUN | B1 | panic | f | - |
+Papier | NOUN | A1 | paper | n | Papiere |
+Partner | NOUN | A2 | partner | m | Partner |
+passen | VERB | A2 | to fit, suit | | |
+passieren | VERB | A2 | to happen | | |
+Paul | PROPN | NAME | | | |
+Paula | PROPN | NAME | | | |
+Pause | NOUN | A1 | break, pause | f | Pausen |
+Personalabteilung | NOUN | B2 | HR department | f | Personalabteilungen |
+Person | NOUN | A1 | person | f | Personen |
+Pflanze | NOUN | A2 | plant | f | Pflanzen |
+pflegen | VERB | B1 | to look after; (zu tun pflegen) to usually do | | |
+Pizza | NOUN | A1 | pizza | f | Pizzas |
+Platz | NOUN | A1 | place, seat; square | m | Plätze |
+Position | NOUN | B1 | position | f | Positionen |
+Praktikum | NOUN | B1 | internship | n | Praktika | Praktikums
+Preisnachlass | NOUN | C1 | price reduction, discount | m | Preisnachlässe |
+prima | ADJ | A1 | great | | | Prima
+Probe | NOUN | B2 | sample; test | f | Proben |
+probieren | VERB | A2 | to try, taste | | |
+Problem | NOUN | A1 | problem | n | Probleme |
+Professor | NOUN | B1 | professor | m | Professoren |
+Profil | NOUN | B2 | profile | n | Profile |
+profitieren | VERB | B2 | to benefit | | |
+Projekt | NOUN | A2 | project | n | Projekte |
+Projektmanagement | NOUN | C1 | project management | n | - |
+Protokoll | NOUN | B2 | protocol; record | n | Protokolle |
+Prozent | NOUN | A2 | percent | n | Prozente |
+Quadratmeter | NOUN | B1 | square metre | m | Quadratmeter |
+randlos | ADJ | C2 | rimless | | |
+rennen | VERB | A2 | to run | | | rannte, gerannt
+raten | VERB | B1 | to advise | | | rate, rät, riet
+Raunen | NOUN | C2 | murmur | n | - |
+reagieren | VERB | B1 | to react | | |
+Rechnung | NOUN | A2 | bill, invoice | f | Rechnungen |
+recht | ADV | B1 | right (recht haben = to be right) | | |
+rechts | ADV | A1 | on the right | | |
+rechte | ADJ | A2 | right (side) | | | rechter, rechten
+Rede | NOUN | B1 | speech, talk (die Rede kommt auf … = the conversation turns to …) | f | Reden |
+reden | VERB | A2 | to talk | | |
+reduzieren | VERB | B2 | to reduce | | |
+Regal | NOUN | A2 | shelf | n | Regale |
+regelmäßig | ADJ | B1 | regular(ly) | | |
+Regen | NOUN | A1 | rain | m | - |
+regnerisch | ADJ | B1 | rainy | | |
+reich | ADJ | B1 | rich | | |
+renommiert | ADJ | C1 | renowned | | |
+reproduzierbar | ADJ | C1 | reproducible | | |
+Restaurant | NOUN | A1 | restaurant | n | Restaurants |
+restaurieren | VERB | C1 | to restore | | |
+Rezept | NOUN | A2 | recipe; prescription | n | Rezepte |
+richtig | ADJ | A1 | right, correct(ly), properly | | |
+riechen | VERB | B1 | to smell | | | roch, gerochen
+Roman | NOUN | B1 | novel | m | Romane |
+rot | ADJ | A1 | red | | |
+runzeln | VERB | C1 | (die Stirn runzeln) to frown | | |
+rückblickend | ADV | C1 | in retrospect | | |
+Rückfahrt | NOUN | A2 | return journey | f | Rückfahrten |
+Rückschlag | NOUN | C1 | setback | m | Rückschläge |
+rühren | VERB | B2 | to stir | | |

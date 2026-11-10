@@ -1,0 +1,21 @@
+title: Die Gehaltsverhandlung
+level: C1
+grammar: KONJ2_HOEFLICH | NOMINALSTIL | REDEWENDUNG
+story: Vergütung, Gehaltsanpassung, Zertifizierung
+note: **Hedging with Konjunktiv II.** Softer than the indicative: *Das **entspräche** in etwa … – **Wäre** es denkbar, …? – Darüber **ließe** sich reden.*
+note: **Negotiating phrases.** *etwas in Aussicht stellen* (to hold out the prospect of), *den Spielraum haben* (to have room), *Damit kann ich gut leben.* (I can accept that.), *etwas schriftlich festhalten* (to put in writing).
+note: **Idiom.** *Das ist eine Hausnummer.* – informal for "that's a serious figure".
+---
+Frau Berger: Herr Hoffmann, schön, dass Sie da sind. Sie hatten um dieses Gespräch gebeten. Worum geht es?
+Herr Hoffmann: Vielen Dank, dass Sie sich die Zeit nehmen. Ich möchte gern über meine Vergütung sprechen. Seit meiner letzten Gehaltsanpassung sind inzwischen fast drei Jahre vergangen{vergehen}, und mein Aufgabenbereich hat sich in dieser Zeit erheblich erweitert.
+Frau Berger: Das ist mir durchaus bewusst. Können Sie das konkretisieren?
+Herr Hoffmann: Gern. Seit dem vergangenen Jahr leite ich das Projekt zur Umstellung auf das neue Buchungssystem, das wir übrigens zwei Monate vor dem geplanten Termin abschließen konnten. Darüber hinaus habe ich die Einarbeitung der drei neuen Kolleginnen übernommen.
+Frau Berger: Die Umstellung ist tatsächlich hervorragend gelaufen, das hat auch die Geschäftsführung so gesehen. An welche Größenordnung hatten Sie denn gedacht?
+Herr Hoffmann: Angesichts der zusätzlichen Verantwortung halte ich eine Erhöhung um zwölf Prozent für angemessen. Das entspräche in etwa dem, was für vergleichbare Positionen in der Branche üblich ist.
+Frau Berger: Zwölf Prozent sind eine Hausnummer. Ich will ehrlich sein. Das Budget für dieses Jahr ist weitgehend ausgeschöpft. Mehr als sechs Prozent kann ich Ihnen momentan nicht in Aussicht stellen.
+Herr Hoffmann: Ich verstehe, dass der Spielraum begrenzt ist. Wäre es denkbar, die Differenz auf andere Weise auszugleichen, etwa durch zusätzliche Urlaubstage oder ein Budget für Weiterbildung?
+Frau Berger: Darüber ließe sich reden. Was schwebt{vorschweben} Ihnen vor{vorschweben}?
+Herr Hoffmann: Ich würde gern im nächsten Jahr eine berufsbegleitende Zertifizierung im Projektmanagement machen. Wenn die Firma die Kosten übernähme, wäre mir das fast so viel wert wie eine höhere Erhöhung.
+Frau Berger: Das klingt nach einer Lösung, von der beide Seiten profitieren würden. Ich schlage{vorschlagen} Folgendes vor{vorschlagen}: sechs Prozent ab Januar, die Übernahme der Weiterbildungskosten und ein Gespräch über die nächste Anpassung in zwölf Monaten.
+Herr Hoffmann: Damit kann ich gut leben. Könnten wir das schriftlich festhalten?
+Frau Berger: Selbstverständlich. Ich bereite{vorbereiten} eine Vereinbarung vor{vorbereiten} und schicke sie Ihnen bis Ende der Woche.

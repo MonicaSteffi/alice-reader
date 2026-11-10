@@ -1,5 +1,5 @@
 // Service worker: keeps the app itself available offline. The book and the progress live in IndexedDB.
-const VERSION = '1.2.0'; // change this on every release, or phones keep the old files
+const VERSION = '1.3.0'; // change this on every release, or phones keep the old files
 const CACHE = `alice-app-${VERSION}`;
 const ASSETS = [
   './',

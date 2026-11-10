@@ -1,0 +1,114 @@
+# lemma | POS | level | English | gender | plural | extra forms
+# Function words (level F) and the most basic verbs. A lemma with #suffix is a homograph:
+# the app shows the part before # and the meaning of this entry.
+
+der | DET | F | the; who, which (relative) | | | die, das, den, dem, des, Der, Die, Das
+ein | DET | F | a, an; one | | | Ein, eine, einen, einem, einer, eines
+kein | DET | F | no, not a, none | | | keine, keinen, keiner, keinem, keines
+dieser | DET | F | this | | | diese, dieses, diesem, diesen, Diese, Dieser
+jeder | DET | F | every, each; everyone | | | jede, jedes, jedem, jeden, Jeder
+welcher | DET | F | which | | | welche, welches, welchem, welchen, Welche
+derselbe | DET | F | the same | | | dasselbe, desselben, demselben, dieselbe, selben
+dessen | PRON | F | whose (masc./neut.) | | |
+deren | PRON | F | whose (fem./plural) | | |
+solcher | DET | F | such | | | solche, solchen, solches
+irgendwelche | DET | F | any (at all) | | |
+mein | DET | F | my | | | meine, meinem, meinen, meiner, meines, Mein, Meine
+dein | DET | F | your | | | deine, deinem, deinen, deiner
+sein#poss | DET | F | his, its | | | seine, seinem, seinen, seiner, seines, Sein, Seine
+ihr#poss | DET | F | her, their | | | ihr, ihre, ihrem, ihren, ihrer, ihres
+Ihr#poss | DET | F | your (formal) | | | Ihr, Ihre, Ihrem, Ihren, Ihrer, Ihres
+unser | DET | F | our | | | unsere, unserem, unseren, unserer, unseres, Unsere
+ich | PRON | F | I | | | mich, mir, Ich
+du | PRON | F | you | | | dich, dir, Du
+er | PRON | F | he, it | | | ihn, ihm, Er
+sie | PRON | F | she, her; they, them; it (at the start of a sentence: also Sie = you, formal) | | | Sie
+Sie#formal | PRON | F | you (formal) | | | Ihnen
+es | PRON | F | it | | | Es
+wir | PRON | F | we | | | uns, Wir
+man | PRON | F | one, you, people (in general) | | | Man
+sich | PRON | F | oneself, himself, herself, themselves | | |
+selbst | PRON | A2 | myself, yourself …; even | | |
+etwas | PRON | A1 | something; a little | | |
+nichts | PRON | A1 | nothing | | |
+alles | PRON | A1 | everything | | | allem, alle
+jemand | PRON | A2 | someone, anyone | | |
+niemand | PRON | A2 | nobody, no one | | | niemandem, niemanden
+was | PRON | F | what; that, which | | | Was
+wer | PRON | F | who | | |
+Folgendes | PRON | B2 | the following | | |
+und | CCONJ | F | and | | | Und
+oder | CCONJ | F | or | | |
+aber | CCONJ | F | but; (particle) really | | | Aber
+denn | CCONJ | F | because, for; (in questions) then | | |
+doch | ADV | A2 | but, however; (particle) after all | | | Doch
+sondern | CCONJ | A2 | but (rather) | | |
+dass | SCONJ | F | that | | |
+weil | SCONJ | F | because | | |
+wenn | SCONJ | F | if, when | | | Wenn
+als | SCONJ | F | when (past); than; as | | | Als
+ob | SCONJ | A2 | whether, if | | | Ob
+während | SCONJ | B1 | while, during | | |
+bis | SCONJ | A1 | until; to | | |
+damit | SCONJ | B1 | so that; with it | | | Damit
+sobald | SCONJ | B2 | as soon as | | |
+solange | SCONJ | B1 | as long as | | |
+zumal | SCONJ | C1 | especially since | | |
+wohingegen | SCONJ | C1 | whereas | | |
+weder | CCONJ | B2 | neither | | |
+noch | ADV | A1 | still, yet; nor | | | Noch
+sowohl | CCONJ | B2 | both (… and) | | |
+entweder | CCONJ | B1 | either (… or) | | | Entweder
+zwar | ADV | B2 | it is true that, admittedly | | |
+je | ADV | B2 | the (… the); ever | | | Je
+desto | ADV | B2 | the (more …) | | |
+wie | ADV | F | how; like, as | | | Wie
+wo | ADV | F | where | | | Wo
+wohin | ADV | A1 | where to | | | Wohin
+warum | ADV | A1 | why | | | Warum
+wann | ADV | A1 | when | | | Wann
+worum | ADV | B1 | what … about | | | Worum
+in | ADP | F | in, into | | | In, im, ins, Im
+an | ADP | F | at, on, to | | | An, am, ans, Am
+auf | ADP | F | on, onto; at | | | Auf
+aus | ADP | F | out of, from | | | Aus
+bei | ADP | F | at, with, near | | | Bei, beim
+mit | ADP | F | with | | | Mit
+nach | ADP | F | to, after; according to | | | Nach
+von | ADP | F | from, of, by | | | Von, vom
+zu | ADP | F | to; too | | | zum, zur, Zum
+für | ADP | F | for | | | Für
+um | ADP | F | at (time), around; in order to | | | Um
+über | ADP | F | over, about, above | | |
+unter | ADP | A2 | under, among | | |
+vor | ADP | F | before, in front of; ago | | |
+hinter | ADP | A2 | behind | | |
+neben | ADP | A2 | next to | | |
+zwischen | ADP | A2 | between | | |
+durch | ADP | A2 | through, by | | |
+gegen | ADP | A2 | against; around (time) | | |
+ohne | ADP | A2 | without | | |
+seit | ADP | A2 | since, for (time) | | | Seit
+pro | ADP | B1 | per | | |
+per | ADP | B1 | by, via | | |
+ab | ADP | A2 | from (… on) | | | Ab
+angesichts | ADP | C1 | in view of | | | Angesichts
+nicht | PART | F | not | | |
+ja | PART | F | yes; (particle) after all | | | Ja
+nein | PART | F | no | | | Nein
+bitte | PART | A1 | please | | | Bitte
+danke | INTJ | A1 | thank you | | | Danke
+hallo | INTJ | A1 | hello | | | Hallo
+tschüss | INTJ | A1 | bye | | | Tschüss
+oh | INTJ | A1 | oh | | | Oh
+sein | AUX | A1 | to be | | | bin, bist, ist, sind, seid, war, waren, warst, gewesen, sei, seien, wäre, wären, Wäre, Ist
+haben | AUX | A1 | to have | | | habe, hast, hat, habt, hatte, hatten, gehabt, hätte, hätten, Hätte, Haben, Hat
+werden | AUX | A1 | to become; will; (passive) is done | | | werde, wirst, wird, wurde, wurden, worden, geworden, würde, würden
+können | AUX | A1 | can, to be able to | | | kann, kannst, konnte, konnten, könne, könnte, könnten, Könnten, Können, Kann
+müssen | AUX | A1 | must, to have to | | | muss, musst, musste, mussten, Muss
+wollen | AUX | A1 | to want to | | | will, willst, wollte, wollten
+sollen | AUX | A2 | should, to be supposed to | | | soll, sollst, sollte, sollten
+dürfen | AUX | A2 | may, to be allowed to | | | darf, darfst, durfte, durften
+möchten | AUX | A1 | would like (to) | | | möchte, möchtest
+mögen | AUX | A1 | to like | | | mag, magst
+lassen | AUX | B1 | to let; to leave; (sich lassen) can be done | | | lässt, ließ, ließen, ließe, gelassen

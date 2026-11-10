@@ -1,0 +1,26 @@
+title: Das Vorstellungsgespräch
+level: B2
+grammar: KONJ2_VERG | PASSIV_MODAL | KONJ1 | NOMEN_VERB
+story: Bewerbungsfrist, Abteilungsleiter
+note: **Past subjunctive.** *hätte/wäre* + participle for things that did not happen: ***Hätte** sie die Anzeige später **entdeckt**, **wäre** die Frist **abgelaufen gewesen**.*
+note: **Passive with a modal verb.** Modal + participle + *werden*: *Die Daten **konnten wiederhergestellt werden**.*
+note: **Indirect speech (Konjunktiv I)** reports what someone said: *…, dass ihr Kritik früher schwergefallen **sei**, sie aber gelernt **habe**, …*
+note: **Noun-verb phrases** are typical of formal German: *Fragen **stellen**, Wert **legen** auf, den Ausschlag **geben**, sich Notizen **machen**.*
+---
+Als Selin das Gebäude betrat, war sie fünfzehn Minuten zu früh. Sie hatte sich wochenlang auf dieses Gespräch vorbereitet. Sie hatte die Website des Unternehmens studiert, mögliche Fragen aufgeschrieben und ihre Antworten laut geübt. Trotzdem waren ihre Hände kalt.
+
+Die Firma entwickelte Software für Krankenhäuser, und die ausgeschriebene Stelle passte genau zu ihrem Profil. Hätte sie die Anzeige eine Woche später entdeckt, wäre die Bewerbungsfrist schon abgelaufen gewesen.
+
+Im Besprechungsraum warteten zwei Personen auf sie: Herr Brandt, der Abteilungsleiter, und Frau Okafor aus der Personalabteilung. Nach einer kurzen Begrüßung stellte Herr Brandt die erste Frage.
+
+„Erzählen Sie uns doch von einem Projekt, bei dem etwas schiefgegangen ist.“
+
+Selin hatte mit dieser Frage gerechnet. Sie berichtete von einer Datenbank, die während ihres Praktikums kurz vor dem Abgabetermin abgestürzt war. „Die Daten konnten zum Glück wiederhergestellt werden“, erklärte sie, „aber seitdem lege ich großen Wert auf regelmäßige Sicherungen.“
+
+Frau Okafor machte sich Notizen. Dann wollte sie wissen, wie Selin mit Kritik umgehe. Selin antwortete ehrlich, dass ihr{sie} Kritik früher schwergefallen sei, sie aber gelernt habe, sie als Chance zu sehen.
+
+Zum Schluss durfte Selin selbst Fragen stellen. Sie erkundigte sich nach dem Team und nach Möglichkeiten zur Weiterbildung. Herr Brandt schien von ihren Fragen beeindruckt zu sein.
+
+Zwei Tage später klingelte ihr Telefon. Sie hatte die Stelle bekommen. Später erfuhr sie, dass vor allem eine Antwort den Ausschlag gegeben hatte: die über ihren Fehler.
+
+„Jeder kann von Erfolgen erzählen“, sagte Herr Brandt an ihrem ersten Arbeitstag. „Wir wollten wissen, was Sie aus einem Misserfolg gemacht haben.“

@@ -1,0 +1,31 @@
+title: Omas Rezept
+level: B1
+grammar: PASSIV_PRAES | RELATIV | DAMIT_UMZU
+story: Teig, Zimt
+note: **Passive (present).** *werden* + participle: *Die Äpfel **werden geschält**.* Who does it is not important.
+note: **Relative clauses.** The relative pronoun agrees with the noun; the verb goes to the end: *ein Rezept, **das** schon ihre Mutter benutzt **hat**; ein Löffel, **der** zum Kaffee **gehört**.*
+note: **um … zu / damit** express a purpose: ***Um** das Rezept genau auf**zu**schreiben, …* (same subject). *…, **damit** es nicht verloren **geht**.* (different subject or clause).
+---
+Meine Oma Hilde ist zweiundachtzig Jahre alt und backt jeden Sonntag einen Apfelkuchen. Es ist ein Rezept, das schon ihre Mutter benutzt hat. Lange Zeit stand es nirgends geschrieben. Oma hatte es einfach im Kopf.
+
+Letzten Herbst habe ich sie gebeten, mir das Rezept beizubringen{beibringen}. Ich wollte es aufschreiben, damit es nicht verloren geht.
+
+„Zuerst werden die Äpfel geschält“, erklärte Oma. „Man braucht saure Äpfel, die nicht zu weich sind.“
+
+Ich schälte die Äpfel, während Oma den Teig vorbereitete. „Dann werden Mehl, Zucker, Butter und zwei Eier in eine Schüssel gegeben“, sagte sie.
+
+„Wie viel Zucker?“, fragte ich.
+
+„So viel, wie man braucht“, antwortete sie und lachte.
+
+Das war das Problem. Oma misst{abmessen} nichts ab{abmessen}. Sie nimmt eine Tasse, die keine bestimmte Größe hat, und einen Löffel, der eigentlich zum Kaffee gehört. Um das Rezept genau aufzuschreiben, musste ich alles heimlich wiegen.
+
+Der Teig wird eine Stunde in den Kühlschrank gestellt. Danach wird er ausgerollt und in die Form gelegt. Die Äpfel werden in dünne Scheiben geschnitten und auf den Teig gelegt. Zum Schluss kommt eine Mischung aus Zimt und Zucker darüber.
+
+Nach fünfundvierzig Minuten im Ofen roch die ganze Wohnung nach Äpfeln und Zimt. Der Kuchen, den ich später zu Hause nach meinem Rezept gebacken habe, war gut. Aber er war nicht so gut wie Omas Kuchen.
+
+„Du hast etwas vergessen“, sagte Oma, als sie ihn probierte.
+
+„Was denn?“
+
+„Geduld“, sagte sie.

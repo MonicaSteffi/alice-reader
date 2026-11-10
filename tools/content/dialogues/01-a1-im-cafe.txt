@@ -1,0 +1,25 @@
+title: Im Café
+level: A1
+grammar: MOECHTEN | AKKUSATIV | ZAHLEN
+note: **Ordering.** *Ich möchte …* or *Ich nehme …* + accusative: *Ich möchte **einen** Kaffee. Ich nehme **einen** Tee.* (der Kaffee → einen Kaffee).
+note: **Paying.** *Zusammen oder getrennt?* (one bill or separate?) – *Das macht zwölf Euro achtzig.* – *Stimmt so.* (keep the change).
+note: **Polite forms.** *Sie* is the formal *you*: *Was möchten **Sie**? Danke, **Ihnen** auch.*
+---
+Kellner: Guten Tag! Was möchten Sie?
+Anna: Hallo! Ich möchte einen Kaffee, bitte.
+Kellner: Mit Milch?
+Anna: Ja, mit Milch, aber ohne Zucker.
+Kellner: Und Sie?
+Ben: Ich nehme einen Tee. Haben Sie Kuchen?
+Kellner: Ja, wir haben Apfelkuchen und Schokoladenkuchen.
+Ben: Dann nehme ich einen Apfelkuchen.
+Anna: Für mich auch, bitte.
+Kellner: Gern. Zwei Apfelkuchen, ein Kaffee und ein Tee.
+***
+Ben: Entschuldigung, wir möchten bezahlen.
+Kellner: Zusammen oder getrennt?
+Anna: Zusammen, bitte.
+Kellner: Das macht zwölf Euro achtzig.
+Ben: Hier sind vierzehn Euro. Stimmt so.
+Kellner: Vielen Dank! Einen schönen Tag noch!
+Anna: Danke, Ihnen auch. Tschüss!

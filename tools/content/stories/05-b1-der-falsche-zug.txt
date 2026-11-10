@@ -1,0 +1,27 @@
+title: Der falsche Zug
+level: B1
+grammar: PRAETERITUM | DASS | KONJ2_WUERDE
+story: Schaffner, Anzeige
+note: **Simple past (Präteritum)** is used in written stories: *ich war, ich wusste, er kam, ich stieg aus*. Regular verbs add *-te*: *er fragte, ich erklärte*.
+note: **dass** introduces a subordinate clause; the verb goes to the end: *Ich wusste, **dass** der Termin wichtig **war**.*
+note: **würde + infinitive** for advice and imagined situations: *Wenn ich Sie **wäre**, **würde** ich in Ulm **aussteigen**.*
+---
+Es war ein Freitag im November, und ich war spät dran. Mein Chef hatte mich gebeten, an einem Treffen in Frankfurt teilzunehmen{teilnehmen}. Ich wusste, dass der Termin wichtig war. Deshalb wollte ich auf keinen Fall zu spät kommen.
+
+Am Hauptbahnhof in Stuttgart rannte ich zum Gleis. Auf der Anzeige stand „Frankfurt“, und der Zug stand schon da. Ich stieg{einsteigen} ein{einsteigen}, setzte mich ans Fenster und atmete{durchatmen} tief durch{durchatmen}. Endlich hatte ich Zeit für einen Kaffee.
+
+Nach einer halben Stunde kam der Schaffner. Er sah{ansehen} meine Fahrkarte lange an{ansehen} und runzelte die Stirn.
+
+„Sie wissen aber, dass dieser Zug nach München fährt?“, fragte er.
+
+Ich glaubte zuerst, dass er einen Witz machte. Aber er meinte es ernst. Ich hatte das falsche Gleis genommen. Der Zug nach Frankfurt fuhr{abfahren} vom Gleis daneben ab{abfahren}.
+
+Ich wurde rot. „Was soll ich jetzt machen?“, fragte ich.
+
+„Wenn ich Sie wäre, würde ich in Ulm aussteigen“, antwortete der Schaffner freundlich. „Von dort fährt in zwanzig Minuten ein Zug zurück.“
+
+Ich stieg{aussteigen} in Ulm aus{aussteigen} und rief{anrufen} sofort meinen Chef an{anrufen}. Ich erklärte ihm, was passiert war. Ich war sicher, dass er wütend sein würde. Doch er lachte nur.
+
+„Das Treffen findet{stattfinden} heute sowieso nicht statt{stattfinden}“, sagte er. „Ich wollte Sie gerade anrufen.“
+
+Auf der Rückfahrt habe ich mir etwas versprochen. Seitdem schaue ich immer zweimal auf die Anzeige.

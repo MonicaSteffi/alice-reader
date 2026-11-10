@@ -1,0 +1,17 @@
+title: Ein Tag mit Tom
+level: A1
+grammar: TRENNBAR | UHRZEIT | MOECHTEN
+story: WG, Mensa
+note: **Separable verbs.** The prefix goes to the end of the sentence: *aufstehen* → *Tom **steht** um sieben Uhr **auf**.* Also: *anfangen, einräumen, einkaufen*.
+note: **Time.** *um sieben Uhr* (at seven), *um elf Uhr*, *am Mittag, am Nachmittag, am Abend*.
+note: **möchte.** *möchte* + infinitive at the end: *Er **möchte schlafen**.* Forms: *ich möchte, du möchtest, er möchte*.
+---
+Tom ist Student. Er wohnt mit zwei Freunden in einer WG in Berlin.
+
+Tom steht{aufstehen} jeden Tag um sieben Uhr auf{aufstehen}. Er duscht und macht Frühstück. Er isst gern Müsli mit Milch. Dann fährt er mit dem Fahrrad zur Universität. Die Fahrt dauert zwanzig Minuten.
+
+Um neun Uhr fängt{anfangen} der Kurs an{anfangen}. Tom lernt Informatik. Der Kurs ist interessant, aber auch schwer. Am Mittag isst Tom in der Mensa. Heute gibt es Nudeln mit Tomatensoße. Das Essen kostet drei Euro.
+
+Am Nachmittag arbeitet Tom in einem Supermarkt. Er räumt{einräumen} Regale ein{einräumen} und hilft den Kunden. Die Arbeit ist nicht toll, aber Tom braucht das Geld.
+
+Am Abend kauft{einkaufen} Tom ein{einkaufen}. Er kocht mit seinen Freunden. Sie essen zusammen und spielen Karten. Um elf Uhr ist Tom sehr müde. Er möchte schlafen. Morgen{morgen} klingelt der Wecker wieder um sieben.

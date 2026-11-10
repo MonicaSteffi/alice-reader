@@ -1,14 +1,14 @@
 // Alice reader: a graded reader for iPhone that works offline and keeps all progress on the phone.
 import * as db from './db.js';
 
-const APP_VERSION = '1.2.0';
+const APP_VERSION = '1.3.0';
 const DEFAULT_PREFS = {
   fontSize: 19, theme: 'auto', markNew: true, markStory: true, markSaved: true,
   lastBackup: null, persistAsked: false,
   mode: 'read', rate: 0.85, voice: '',
 };
 const RATES = [[0.7, 'Slow'], [0.85, 'Normal'], [1, 'Fast']];
-const LEVEL_LABEL = { A1: 'A1', A2: 'A2', B1: 'B1', B2: 'B2', B2x: 'B2+', OUT: 'rare', F: 'grammar word', NAME: 'name', NUM: 'number' };
+const LEVEL_LABEL = { A1: 'A1', A2: 'A2', B1: 'B1', B2: 'B2', B2x: 'B2+', C1: 'C1', C2: 'C2', OUT: 'rare', F: 'grammar word', NAME: 'name', NUM: 'number' };
 const POS_LABEL = {
   NOUN: 'noun', PROPN: 'name', VERB: 'verb', AUX: 'auxiliary verb', ADJ: 'adjective', ADV: 'adverb',
   ADP: 'preposition', DET: 'article', PRON: 'pronoun', NUM: 'number', CCONJ: 'conjunction',
@@ -496,6 +496,7 @@ function chapterHTML(ch) {
   const run = (a, z) => { let h = ''; for (let s = a; s < z; s += 1) h += `<span class="sent" data-si="${s}">${tokens(s)}</span>`; return h; };
   return ch.blocks.map((b, bi) => {
     if (b.type === 'p') return `<p data-b="${bi}">${run(b.range[0], b.range[1])}</p>`;
+    if (b.type === 'line') return `<p class="line" data-b="${bi}"><span class="speaker">${esc(b.speaker)}</span>${run(b.range[0], b.range[1])}</p>`;
     if (b.type === 'sign') {
       const lines = b.lines.map(([a, z]) => (a === null ? '<div>&nbsp;</div>' : `<div>${run(a, z)}</div>`)).join('');
       return `<div class="sign" data-b="${bi}">${lines}</div>`;
@@ -518,6 +519,7 @@ function endCardHTML(ch, info) {
     ${notes.length ? `<div class="grammar-notes">${notes.map((n) => `<p>${mdInline(n)}</p>`).join('')}</div>` : ''}
     ${story.length ? `<h3>Story words</h3><table class="glossary">${story.map((s) => `<tr><td>${esc(s.word)}</td><td>${esc(s.gloss || '')}</td></tr>`).join('')}</table>` : ''}
     ${nv.length ? `<h3>New words in this chapter (${nv.length})</h3><p class="small muted">Tap a word to find it in the text.</p><div class="chips">${nv.map((e) => `<button class="chip" type="button" data-jump="${e.first[0]}:${e.first[1]}">${esc(cleanEntry(e.entry))}</button>`).join('')}</div>` : ''}
+    ${chapterQuizItems(ch).length >= 4 ? '<div class="quiz-cta"><div><b>Word quiz</b><span>Test the new words of this chapter.</span></div><button class="btn primary" id="quiz-start" type="button">Start</button></div>' : ''}
     <div class="btn-row">
       <button class="btn primary" id="finish" type="button">${p.status === 'done' ? 'Finished ✓' : 'Mark as finished'}</button>
       ${next ? `<a class="btn" href="#/read/${next.num}">Next: Kapitel ${next.num}</a>` : '<a class="btn" href="#/">Back to the book</a>'}
@@ -575,6 +577,7 @@ async function renderReader(num) {
   });
   $('#aa').onclick = openTextSettings;
   $('#finish').onclick = () => finishChapter(num);
+  if ($('#quiz-start')) $('#quiz-start').onclick = () => { stopListening(); startQuiz(chapterQuizItems(ch), `Kapitel ${num}`); };
   app.querySelectorAll('[data-jump]').forEach((b) => {
     b.onclick = () => {
       const [s, t] = b.dataset.jump.split(':');
@@ -701,6 +704,7 @@ async function finishChapter(num) {
 
 // ------------------------------------------------------------------ word sheet
 function openSheet(html, label) {
+  sheet.classList.remove('quiz');
   sheet.innerHTML = `<div class="grab"></div>${html}`;
   sheet.setAttribute('aria-label', label || 'Details');
   sheet.hidden = false;
@@ -753,7 +757,7 @@ function openWordSheet(si, ti, el, quiet = false) {
   const firstCh = lx ? lx[4] : null;
   const art = pos === 'NOUN' ? articleFor(gender) : '';
   const sg = r.storyGloss.get(lemma) || r.storyGloss.get(surf);
-  const gloss = state.glosses[lemma] || (sg && sg.gloss) || null;
+  const gloss = tok[5] || state.glosses[lemma] || (sg && sg.gloss) || null;
   const st = wordStatus(lemma);
   let lemmaLine = '';
   if (pos === 'NOUN') lemmaLine = `${art ? `${esc(art)} ` : ''}<b>${esc(lemma)}</b>${plural ? `, Plural: die ${esc(plural)}` : ''}`;
@@ -826,7 +830,7 @@ function refreshWordMarks(lemma) {
 function sentenceOrder(ch) {
   const out = [];
   ch.blocks.forEach((b, bi) => {
-    const ranges = b.type === 'p' ? [b.range] : (b.type === 'sign' ? b.lines.filter(([a]) => a !== null) : []);
+    const ranges = b.type === 'p' || b.type === 'line' ? [b.range] : (b.type === 'sign' ? b.lines.filter(([a]) => a !== null) : []);
     for (const [a, z] of ranges) {
       for (let si = a; si < z; si += 1) {
         if (plainSentence(ch.sentences[si]).replace(/[\s\p{P}]/gu, '')) out.push({ si, b: bi });
@@ -949,6 +953,134 @@ function updatePlayer() {
   $('#pl-rate').textContent = rate[1];
 }
 
+// ------------------------------------------------------------------ word quiz
+// Multiple choice: German word → English meaning, and the other way round. Missed words can be saved.
+const QUIZ_LEN = 10;
+
+function shortGloss(g) {
+  const s = String(g || '').replace(/\s*\([^)]*\)/g, '').split(';')[0].trim();
+  return s || String(g || '').trim();
+}
+
+function shuffle(a) {
+  const b = a.slice();
+  for (let i = b.length - 1; i > 0; i -= 1) { const j = Math.floor(Math.random() * (i + 1)); [b[i], b[j]] = [b[j], b[i]]; }
+  return b;
+}
+
+function chapterQuizItems(ch) {
+  const out = [];
+  for (const e of ch.new_vocab || []) {
+    if (e.deferred || !e.first) continue;
+    const tok = ch.sentences[e.first[0]]?.tokens[e.first[1]];
+    const lemma = e.lemma || tok?.[1];
+    const gloss = e.gloss || tok?.[5] || state.glosses[lemma];
+    if (!lemma || !gloss) continue;
+    const sentence = ch.sentences[e.first[0]];
+    out.push({ lemma, de: cleanEntry(e.entry), en: shortGloss(gloss), gloss, level: e.level || tok?.[3], pos: tok?.[2],
+      article: tok?.[2] === 'NOUN' ? cleanEntry(e.entry).split(' ')[0] : '',
+      sentence: sentence ? plainSentence(sentence) : '', chapter: ch.num });
+  }
+  return out;
+}
+
+function savedQuizItems() {
+  return [...state.words.values()].filter((w) => w.status === 'learning' && w.gloss).map((w) => ({
+    lemma: w.lemma, de: `${w.article ? `${w.article} ` : ''}${w.lemma}`, en: shortGloss(w.gloss), gloss: w.gloss,
+    level: w.level, pos: w.pos, article: w.article || '', sentence: w.sentence || '', chapter: w.chapter,
+  }));
+}
+
+function startQuiz(items, label) {
+  const pool = items.filter((x, i, a) => a.findIndex((y) => y.en === x.en) === i);
+  const picked = shuffle(pool).slice(0, QUIZ_LEN);
+  const allGloss = [...new Set([...pool.map((x) => x.en), ...Object.values(state.glosses).map(shortGloss)])];
+  const questions = picked.map((item, i) => {
+    const toGerman = i % 2 === 1; // alternate the direction
+    const others = toGerman
+      ? shuffle(pool.filter((x) => x.de !== item.de)).map((x) => x.de)
+      : shuffle([...pool.filter((x) => x.en !== item.en).map((x) => x.en), ...shuffle(allGloss).slice(0, 12)]).filter((g) => g !== item.en);
+    const wrong = [...new Set(others)].slice(0, 3);
+    return { item, toGerman, options: shuffle([toGerman ? item.de : item.en, ...wrong]) };
+  });
+  state.quiz = { label, questions, i: 0, score: 0, missed: [], answered: false };
+  renderQuiz();
+}
+
+function renderQuiz() {
+  const q = state.quiz;
+  const cur = q.questions[q.i];
+  const speech = 'speechSynthesis' in window;
+  const prompt = cur.toGerman
+    ? `<div class="q-ask">What is the German word for</div><div class="q-word en">${esc(cur.item.en)}</div>`
+    : `<div class="q-ask">What does this mean?</div><div class="q-word" lang="de">${esc(cur.item.de)}${speech ? ' <button class="say" type="button" id="q-say" aria-label="Listen">▶</button>' : ''}</div>`;
+  openSheet(`
+    <div class="q-head"><span>${esc(q.label)} · Word quiz</span><span>${q.i + 1} / ${q.questions.length}</span></div>
+    <div class="bar"><i style="width:${Math.round((q.i / q.questions.length) * 100)}%"></i></div>
+    ${prompt}
+    <div class="q-options">${cur.options.map((o, k) => `<button class="q-opt" type="button" data-k="${k}"${cur.toGerman ? ' lang="de"' : ''}>${esc(o)}</button>`).join('')}</div>
+    <div id="q-feedback"></div>`, 'Word quiz');
+  sheet.classList.add('quiz');
+  if ($('#q-say')) $('#q-say').onclick = () => speak(cur.item.de);
+  sheet.querySelectorAll('.q-opt').forEach((b) => { b.onclick = () => answerQuiz(Number(b.dataset.k)); });
+}
+
+function answerQuiz(k) {
+  const q = state.quiz;
+  if (q.answered) return;
+  q.answered = true;
+  const cur = q.questions[q.i];
+  const right = cur.toGerman ? cur.item.de : cur.item.en;
+  const ok = cur.options[k] === right;
+  if (ok) q.score += 1; else q.missed.push(cur.item);
+  sheet.querySelectorAll('.q-opt').forEach((b) => {
+    const opt = cur.options[Number(b.dataset.k)];
+    if (opt === right) b.classList.add('right');
+    else if (Number(b.dataset.k) === k) b.classList.add('wrong');
+    b.disabled = true;
+  });
+  const it = cur.item;
+  const ex = it.sentence ? `<div class="sentence" lang="de">${esc(it.sentence)}</div>` : '';
+  $('#q-feedback').innerHTML = `
+    <div class="q-result ${ok ? 'ok' : 'no'}">${ok ? 'Richtig!' : 'Not quite.'} <b lang="de">${esc(it.de)}</b> = ${esc(it.gloss)}</div>
+    ${ex}
+    <div class="btn-row"><button class="btn primary" type="button" id="q-next">${q.i + 1 < q.questions.length ? 'Next' : 'See result'}</button></div>`;
+  if ('speechSynthesis' in window) speak(it.de);
+  $('#q-next').onclick = () => {
+    q.i += 1; q.answered = false;
+    if (q.i < q.questions.length) renderQuiz(); else renderQuizEnd();
+  };
+}
+
+function renderQuizEnd() {
+  const q = state.quiz;
+  const n = q.questions.length;
+  const pct = q.score / n;
+  const msg = pct === 1 ? 'Perfekt! All correct.' : pct >= 0.7 ? 'Sehr gut!' : pct >= 0.4 ? 'Gut gemacht. Keep practising.' : 'Keep going – read the chapter again and try once more.';
+  const missedNew = q.missed.filter((m) => wordStatus(m.lemma) !== 'learning');
+  openSheet(`
+    <div class="q-head"><span>${esc(q.label)} · Word quiz</span><span></span></div>
+    <div class="q-score"><b>${q.score} / ${n}</b><span>${esc(msg)}</span></div>
+    ${q.missed.length ? `<h3>Words to practise</h3><table class="glossary">${q.missed.map((m) => `<tr><td lang="de">${esc(m.de)}</td><td>${esc(m.gloss)}</td></tr>`).join('')}</table>` : ''}
+    <div class="btn-row">
+      ${missedNew.length ? `<button class="btn primary" type="button" id="q-save">Save ${missedNew.length === 1 ? 'this word' : `these ${missedNew.length} words`}</button>` : ''}
+      <button class="btn" type="button" id="q-again">Play again</button>
+      <button class="btn" type="button" id="q-close">Close</button>
+    </div>`, 'Quiz result');
+  sheet.classList.add('quiz');
+  if ($('#q-save')) {
+    $('#q-save').onclick = async () => {
+      for (const m of missedNew) {
+        await setWordStatus({ lemma: m.lemma, surface: m.lemma, chapter: m.chapter, sentence: m.sentence, gloss: m.gloss, level: m.level, pos: m.pos, article: m.article }, 'learning');
+      }
+      toast('Saved to your words.');
+      $('#q-save').remove();
+    };
+  }
+  $('#q-again').onclick = () => startQuiz(q.questions.map((x) => x.item).concat(q.missed), q.label);
+  $('#q-close').onclick = closeSheet;
+}
+
 // ------------------------------------------------------------------ text settings (in the reader)
 function segHTML(id, options, value) {
   return `<div class="seg" id="${id}">${options.map(([v, label]) => `<button type="button" data-v="${v}" class="${String(v) === String(value) ? 'on' : ''}">${label}</button>`).join('')}</div>`;
@@ -1027,8 +1159,10 @@ function renderWords(tab) {
       <button type="button" role="tab" data-tab="known" class="${current === 'known' ? 'on' : ''}">Known (${nKnown})</button>
     </div>
     <div class="list">${rows || `<div class="empty">${current === 'learning' ? 'No saved words yet. Tap a word while reading and choose “Save word”.' : 'No known words yet. Tap a word and choose “I know it”.'}</div>`}</div>
-    <p class="small muted">Flashcard training with spaced repetition comes in the next version.</p>`;
+    ${current === 'learning' && savedQuizItems().length >= 4 ? '<button class="btn primary block" id="quiz-saved" type="button" style="margin-top:14px">Practise saved words</button>' : ''}
+    ${current === 'learning' && nLearning && savedQuizItems().length < 4 ? '<p class="small muted">Save at least 4 words with a meaning to practise them in a quiz.</p>' : ''}`;
   app.querySelectorAll('[data-tab]').forEach((b) => { b.onclick = () => renderWords(b.dataset.tab); });
+  if ($('#quiz-saved')) $('#quiz-saved').onclick = () => startQuiz(savedQuizItems(), 'Saved words');
   app.querySelectorAll('[data-del]').forEach((b) => {
     b.onclick = async () => {
       state.words.delete(b.dataset.del);

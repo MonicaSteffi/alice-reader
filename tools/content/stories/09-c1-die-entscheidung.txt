@@ -1,0 +1,23 @@
+title: Die Entscheidung
+level: C1
+grammar: PARTIZIPATTRIBUT | KONNEKTOREN | NOMINALSTIL
+story: Schlaganfall, Zusage
+note: **Extended participle phrases** sit between article and noun: *nach einem **im Winter erlittenen** Schlaganfall* = after a stroke that he suffered in winter; *an einem **seit Jahren geplanten** Projekt*.
+note: **Connectors.** ***zumal*** (especially since) adds a strong reason; ***wohingegen*** (whereas) contrasts; ***insofern*** (in that respect) draws a conclusion.
+note: **Nominal style.** Formal German often uses nouns instead of verbs: *eine Entscheidung treffen, die Abwägung von Vor- und Nachteilen, die Unterzeichnung des Vertrags.*
+---
+Der Brief aus Kopenhagen lag seit drei Tagen ungeöffnet auf Daniels Schreibtisch, zwischen unbezahlten Rechnungen und einem halb gelesenen Roman. Er wusste, was darin stand. Die Personalabteilung hatte ihn bereits telefonisch über die Zusage informiert. Was ihm fehlte, war nicht die Information, sondern der Mut, eine Entscheidung zu treffen.
+
+Das Angebot war verlockend: eine leitende Position an einem renommierten Forschungsinstitut, ein deutlich höheres Gehalt und die Aussicht, an einem seit Jahren geplanten Projekt mitzuwirken. Aus beruflicher Sicht sprach kaum etwas dagegen, zumal seine derzeitige Stelle befristet war.
+
+Doch Entscheidungen dieser Art lassen sich selten auf eine Abwägung von Vor- und Nachteilen reduzieren. Daniels Vater, der nach einem im Winter erlittenen Schlaganfall auf Unterstützung angewiesen war, lebte nur zwei Straßen weiter. Seine Schwester wohnte in Australien, wohingegen er selbst immer in der Nähe gewesen war. Insofern betraf die Entscheidung nicht nur ihn.
+
+An einem Sonntagnachmittag sprach{ansprechen} er das Thema schließlich an{ansprechen}. Sein Vater hörte{zuhören} schweigend zu{zuhören}, rührte langsam in seinem Tee und sah aus dem Fenster.
+
+„Weißt du, warum ich nie im Ausland gearbeitet habe?“, fragte er nach einer langen Pause. „Ich hatte damals ein Angebot aus Kanada. Ich habe es abgelehnt, weil ich glaubte, man brauche mich hier.“
+
+„Und? Hat man dich gebraucht?“
+
+„Vermutlich weniger, als ich dachte.“ Er lächelte. „Ich habe es nicht bereut. Aber ich habe mich oft gefragt, wie es gewesen wäre.“
+
+Auf dem Heimweg wurde Daniel klar, dass ihm sein Vater keine Antwort gegeben hatte, sondern etwas Wertvolleres: die Erlaubnis, selbst eine zu finden. Noch am selben Abend öffnete er den Brief. Die Unterzeichnung des Vertrags verschob er um eine Woche, um mit dem Institut über eine Lösung zu verhandeln, die regelmäßige Heimreisen ermöglichte.

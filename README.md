@@ -21,6 +21,16 @@ A small reading app for a graded German reader (levels A1 to B2). It runs in the
 
 `id` must be unique and must not change later (progress is stored under it). To publish a corrected book file, raise `version`; phones load the new file and keep the progress.
 
+## Stories and dialogues
+
+`books/stories.json` (12 short stories, A1–C2) and `books/dialogues.json` (5 everyday conversations, A1–C1) are built from the text files in `tools/content/`. Every chapter ends with grammar notes, a word list and a word quiz.
+
+To change or add a story:
+
+1. Edit or add a file in `tools/content/stories/` or `tools/content/dialogues/` (copy an existing one for the format; `word{lemma}` sets the base form, e.g. for separable verbs).
+2. Run `python3 tools/build_books.py --check`. It lists every word that is not yet in `tools/lexicon/`. Add those words (one line each: base form, part of speech, level, English meaning, gender, plural, other forms).
+3. Run `python3 tools/build_books.py`, raise `version` for that book in `books/index.json`, commit and push.
+
 ## Privacy
 
 All progress stays on the phone (IndexedDB). Books in the `books` folder are public if the repository is public. Nothing is sent to a server.
